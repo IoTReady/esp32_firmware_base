@@ -3,7 +3,7 @@
 ## Websockets Demo
 
 ### Goal Framework Modules
-
+#### v1.0
 - System Status API: get [free heap sizes](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system.html#_CPPv422esp_get_free_heap_size), [task status](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html?highlight=uxtaskgetsystemstate#_CPPv420uxTaskGetSystemStatePC12TaskStatus_tK11UBaseType_tPC8uint32_t), [run-time stats](https://www.freertos.org/rtos-run-time-stats.html)
   - Example: Run multiple sample tasks and periodically print system stats.
 - GPIO Interface: Initialize, enable ISR, get/set state uxTaskGetSystemState
@@ -16,6 +16,7 @@
   - Example code that gets the Access Point credentials from:
     - REST API calls
     - Bluetooth (?)
+#### Post v1.0
 - REST API for control signals similar to [Nerves example](https://elixirschool.com/en/)
 - Websockets API for state communication
 - ESP32 will send updated state via websockets to every connected client
