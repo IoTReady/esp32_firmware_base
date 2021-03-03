@@ -1,4 +1,4 @@
-# IoTReady Demo Firmware for ESP32
+# IoTReady Firmware Base for ESP32
 
 ### Project Structure
 - [lib](./lib) folder contains all libraries/modules
