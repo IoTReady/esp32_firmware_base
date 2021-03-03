@@ -1,6 +1,8 @@
 # IoTReady Demo Firmware for ESP32
 
-## Websockets Demo
+### Project Structure
+- [lib](./lib) folder contains all libraries/modules
+- [examples](./examples) contains examples using modules contained in the above mentioned lib folder.
 
 ### Goal Framework Modules
 #### v1.0
