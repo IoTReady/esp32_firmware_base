@@ -3,4 +3,4 @@
 cmake_minimum_required(VERSION 3.5)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(iotready_system_stats_example_esp32)
+project(iotready_wifi_softap_example_esp32)
