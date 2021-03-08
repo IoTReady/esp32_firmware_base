@@ -1,5 +1,5 @@
-# WiFi SoftAP Example
+# WiFi Station Example
 
-Starts a WiFi softap for 30 seconds and ends it.
+Tries to connect to the configured WiFi network for 5 tries.
 
-See the corresponding [README.md](../../lib/wifi_softap/README.md) file in the corresponding 'lib' directory for more information on this module.
+See the corresponding [README.md](../../lib/wifi_station/README.md) file in the corresponding 'lib' directory for more information on this module.
