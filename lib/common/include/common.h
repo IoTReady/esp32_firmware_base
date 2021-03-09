@@ -12,4 +12,7 @@
 
 #define TOTAL_GPIO 50
 
+// char* get_device_id();
+const char* get_device_id();
+
 #endif // __COMMON_H__
