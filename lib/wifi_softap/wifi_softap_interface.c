@@ -2,11 +2,25 @@
 #include "esp_event.h"
 #include "esp_log.h"
 #include "esp_wifi.h"
+#include "esp_netif.h"
 
 
 #define TAG "SOFTAP_INTERFACE"
+#define DEFAULT_ESP_WIFI_CHANNEL 1
+#define DEFAULT_ESP_MAX_STA_CONN 4
 
 esp_netif_t *ap_netif;
+esp_netif_ip_info_t ip;
+
+// Soft-AP configuration settings
+wifi_config_t wifi_config = {
+    .ap = {
+        .channel = DEFAULT_ESP_WIFI_CHANNEL,
+        .max_connection = DEFAULT_ESP_MAX_STA_CONN,
+        .authmode = WIFI_AUTH_WPA_WPA2_PSK
+    },
+};
+
 
 static void wifi_event_handler(void* arg, esp_event_base_t event_base,
                                     int32_t event_id, void* event_data)
@@ -20,6 +34,60 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,
         ESP_LOGI(TAG, "station "MACSTR" leave, AID=%d",
                  MAC2STR(event->mac), event->aid);
     }
+}
+
+esp_err_t wifi_set_credentials(char* ssid, char* password)
+{
+    strcpy((char*)wifi_config.ap.ssid, ssid);
+    strcpy((char*)wifi_config.ap.password, password);
+    if (strlen(password) == 0) {
+        wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+    }
+    // Set the configuration of the ESP32 AP.
+    esp_err_t err = esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config);
+    if (err == ESP_ERR_WIFI_NOT_INIT)
+    {
+        ESP_LOGE(TAG, "WiFi is not initialized by esp_wifi_init! Could not set AP configuration!");
+        return err;
+    }
+    else if(err == ESP_ERR_INVALID_ARG)
+    {
+        ESP_LOGE(TAG, "Invalid argument! Could not set AP configuration!");
+        return err;
+    }
+    else if(err == ESP_ERR_WIFI_IF)
+    {
+        ESP_LOGE(TAG, "Invalid interface! Could not set AP configuration!");
+        return err;
+    }
+    else if(err == ESP_ERR_WIFI_MODE)
+    {
+        ESP_LOGE(TAG, "Invalid mode! Could not set AP configuration!");
+        return err;
+    }
+    else if(err == ESP_ERR_WIFI_PASSWORD)
+    {
+        ESP_LOGE(TAG, "Invalid password! Could not set AP configuration!");
+        return err;
+    }
+    else if(err == ESP_ERR_WIFI_NVS)
+    {
+        ESP_LOGE(TAG, "WiFi internal NVS error! Could not set AP configuration!");
+        return err;
+    }
+    else if(err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not set WiFi operating mode!");
+        return err;
+    }
+    return err;
+}
+
+void wifi_restart()
+{
+    esp_wifi_stop();
+    vTaskDelay(200 / portTICK_PERIOD_MS);
+    esp_wifi_start();
 }
 
 // Setup and initialize WiFi in softAP mode with the parameters provided as arguments.
@@ -85,19 +153,6 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
         return err;
     }
 
-    // Soft-AP configuration settings
-    wifi_config_t wifi_config = {
-        .ap = {
-            .channel = channel,
-            .max_connection = max_connections,
-            .authmode = WIFI_AUTH_WPA_WPA2_PSK
-        },
-    };
-    strcpy((char*)wifi_config.ap.ssid, wifi_ssid);
-    strcpy((char*)wifi_config.ap.password, wifi_password);
-    if (strlen(wifi_password) == 0) {
-        wifi_config.ap.authmode = WIFI_AUTH_OPEN;
-    }
 
     // Set the WiFi operating mode.
     err = esp_wifi_set_mode(WIFI_MODE_AP);
@@ -116,44 +171,12 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
         ESP_LOGE(TAG, "Could not set WiFi operating mode!");
         return err;
     }
+    
+    // Soft-AP configuration settings
+    wifi_config.ap.channel = channel;
+    wifi_config.ap.max_connection = max_connections;
 
-    // Set the configuration of the ESP32 AP.
-    err = esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config);
-    if (err == ESP_ERR_WIFI_NOT_INIT)
-    {
-        ESP_LOGE(TAG, "WiFi is not initialized by esp_wifi_init! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Invalid argument! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_IF)
-    {
-        ESP_LOGE(TAG, "Invalid interface! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_MODE)
-    {
-        ESP_LOGE(TAG, "Invalid mode! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_PASSWORD)
-    {
-        ESP_LOGE(TAG, "Invalid password! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_NVS)
-    {
-        ESP_LOGE(TAG, "WiFi internal NVS error! Could not set AP configuration!");
-        return err;
-    }
-    else if(err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not set WiFi operating mode!");
-        return err;
-    }
+    wifi_set_credentials(wifi_ssid, wifi_password);
 
     // Start WiFi according to current configuration
     err = esp_wifi_start();
@@ -185,7 +208,10 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
 
     ESP_LOGI(TAG, "wifi_init_softap finished. SSID:%s password:%s channel:%d",
              wifi_ssid, wifi_password, channel);
-    
+
+    esp_netif_get_ip_info(ap_netif, &ip);
+    ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
+
     return err;
 }
 
@@ -215,6 +241,12 @@ esp_err_t wifi_deinit_softap()
 
     // Deinit WiFi. Free all resource allocated in esp_wifi_init and stop WiFi task.
     err = esp_wifi_deinit();
+    if (err == ESP_ERR_WIFI_NOT_INIT) {
+        ESP_LOGW(TAG, "WiFi is not initialized by esp_wifi_init!");
+        return err;
+    }
+
+    err = esp_event_loop_delete_default();
     if (err == ESP_ERR_WIFI_NOT_INIT) {
         ESP_LOGW(TAG, "WiFi is not initialized by esp_wifi_init!");
         return err;
