@@ -36,7 +36,6 @@ void softap_task(void *pvParameter) {
       ret = nvs_flash_init();
     }
 
-
     // Initialize softAP
     wifi_init_softap(softap_ssid, CONFIG_ESP_WIFI_PASSWORD, CONFIG_ESP_WIFI_CHANNEL, CONFIG_ESP_MAX_STA_CONN);
     // vTaskDelay(30000 / portTICK_PERIOD_MS);

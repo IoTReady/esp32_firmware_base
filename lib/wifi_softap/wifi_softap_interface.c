@@ -119,6 +119,18 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
     // Create default WIFI AP. In case of any init error this API aborts.
     ap_netif = esp_netif_create_default_wifi_ap();
 
+    esp_netif_dhcp_status_t dhcp_status;
+    if(esp_netif_dhcps_get_status(ap_netif, &dhcp_status) != ESP_NETIF_DHCP_STOPPED)
+        esp_netif_dhcps_stop(ap_netif);
+
+    const esp_netif_ip_info_t new_ip_info = {
+        .ip = { .addr = ESP_IP4TOADDR( 192, 168, 0, 1) },
+        .gw = { .addr = ESP_IP4TOADDR( 192, 168, 0, 1) },
+        .netmask = { .addr = ESP_IP4TOADDR( 255, 255, 255, 0) },
+    };
+    err = esp_netif_set_ip_info(ap_netif, &new_ip_info);
+    esp_netif_dhcps_start(ap_netif);
+
     // Store default WiFi Init configurations
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
 
