@@ -1,6 +1,25 @@
 #ifndef __SOFTAP_INTERFACE_H__
 #define __SOFTAP_INTERFACE_H__ 1
 
+#include <esp_wifi.h>
+
+// #define DEFAULT_ESP_WIFI_CHANNEL 1
+// #define DEFAULT_ESP_MAX_STA_CONN 4
+
+
+// // Soft-AP configuration settings
+// wifi_config_t wifi_config = {
+//     .ap = {
+//         .channel = DEFAULT_ESP_WIFI_CHANNEL,
+//         .max_connection = DEFAULT_ESP_MAX_STA_CONN,
+//         .authmode = WIFI_AUTH_WPA_WPA2_PSK
+//     },
+// };
+
+void wifi_restart();
+
+void wifi_set_credentials(char* ssid, char* password);
+
 /**
  * @brief  Initialize softAP
  *

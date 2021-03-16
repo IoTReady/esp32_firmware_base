@@ -29,7 +29,7 @@ static EventGroupHandle_t s_wifi_event_group;
 static int s_retry_num = 0;
 
 esp_netif_t *ap_netif;
-
+esp_netif_ip_info_t ip;
 
 static void event_handler(void* arg, esp_event_base_t event_base,
                                 int32_t event_id, void* event_data)
@@ -64,7 +64,6 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-
     // Create default event loop
     err = esp_event_loop_create_default();
     if (err  != ESP_OK){
@@ -132,7 +131,6 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
         return error_print_and_return(TAG, err);
     }
 
-
     ESP_LOGI(TAG, "wifi_init_station finished.");
 
     /* Waiting until either the connection is established (WIFI_CONNECTED_BIT) or connection failed for the maximum
@@ -167,6 +165,9 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
 
     vEventGroupDelete(s_wifi_event_group);
 
+    esp_netif_get_ip_info(ap_netif, &ip);
+    ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
+    
     return err;
 }
 
