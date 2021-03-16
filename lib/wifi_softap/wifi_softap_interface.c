@@ -3,6 +3,7 @@
 #include "esp_log.h"
 #include "esp_wifi.h"
 #include "esp_netif.h"
+#include "utilities.h"
 
 
 #define TAG "SOFTAP_INTERFACE"
@@ -45,40 +46,8 @@ esp_err_t wifi_set_credentials(char* ssid, char* password)
     }
     // Set the configuration of the ESP32 AP.
     esp_err_t err = esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config);
-    if (err == ESP_ERR_WIFI_NOT_INIT)
-    {
-        ESP_LOGE(TAG, "WiFi is not initialized by esp_wifi_init! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Invalid argument! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_IF)
-    {
-        ESP_LOGE(TAG, "Invalid interface! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_MODE)
-    {
-        ESP_LOGE(TAG, "Invalid mode! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_PASSWORD)
-    {
-        ESP_LOGE(TAG, "Invalid password! Could not set AP configuration!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_NVS)
-    {
-        ESP_LOGE(TAG, "WiFi internal NVS error! Could not set AP configuration!");
-        return err;
-    }
-    else if(err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not set WiFi operating mode!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
     return err;
 }
@@ -97,23 +66,14 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
 
     // Initialize the underlying TCP/IP stack
     err = esp_netif_init();
-    if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not initialize NETIF!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Create default event loop
     err = esp_event_loop_create_default();
-    if (err == ESP_ERR_NO_MEM)
-    {
-        ESP_LOGE(TAG, "Not enough memory to create default event loop!");
-        return err;   
-    }
-    else if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not create default event loop!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Create default WIFI AP. In case of any init error this API aborts.
@@ -129,59 +89,34 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
         .netmask = { .addr = ESP_IP4TOADDR( 255, 255, 255, 0) },
     };
     err = esp_netif_set_ip_info(ap_netif, &new_ip_info);
-    esp_netif_dhcps_start(ap_netif);
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
+    }
+    err = esp_netif_dhcps_start(ap_netif);
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
+    }
 
     // Store default WiFi Init configurations
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
 
     // Init WiFi Alloc resource
     err = esp_wifi_init(&cfg);
-    if (err == ESP_ERR_NO_MEM)
-    {
-        ESP_LOGE(TAG, "Not enough memory to initialize WiFi");
-        return err;
-    }
-    else if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not initialize WiFi!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Register the event handler to the system event loop
     err = esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler, NULL);
-    if (err == ESP_ERR_NO_MEM)
-    {
-        ESP_LOGE(TAG, "Not enough memory to allocate memory for the handler!");
-        return err;
-    }
-    else if (err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Could not register the event handler to the system event loop! Invalid combination of event base and event id");
-        return err;
-    }
-    else if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not register the event handler to the system event loop!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
 
     // Set the WiFi operating mode.
     err = esp_wifi_set_mode(WIFI_MODE_AP);
-    if (err == ESP_ERR_WIFI_NOT_INIT)
-    {
-        ESP_LOGE(TAG, "WiFi is not initialized by esp_wifi_init! Could not set WiFi operating mode!");
-        return err;
-    }
-    else if(err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Invalid argument! Could not set WiFi operating mode!");
-        return err;
-    }
-    else if(err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not set WiFi operating mode!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
     
     // Soft-AP configuration settings
@@ -192,30 +127,8 @@ esp_err_t wifi_init_softap(const char *wifi_ssid, const char *wifi_password, int
 
     // Start WiFi according to current configuration
     err = esp_wifi_start();
-    if (err == ESP_ERR_WIFI_NOT_INIT)
-    {
-        ESP_LOGE(TAG, "WiFi is not initialized by esp_wifi_init! Could not start WiFi!");
-        return err;
-    }
-    else if(err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Invalid argument! Could not start WiFi!");
-        return err;
-    }
-    else if(err == ESP_ERR_NO_MEM)
-    {
-        ESP_LOGE(TAG, "Out of memory! Could not start WiFi!");
-        return err;
-    }
-    else if(err == ESP_ERR_WIFI_CONN)
-    {
-        ESP_LOGE(TAG, "WiFi internal error, station or soft-AP control block wrong! Could not start WiFi!");
-        return err;
-    }
-    else if(err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not set WiFi operating mode!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     ESP_LOGI(TAG, "wifi_init_softap finished. SSID:%s password:%s channel:%d",
@@ -233,42 +146,31 @@ esp_err_t wifi_deinit_softap()
 
     // Unregister the event handler to the system event loop
     err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &wifi_event_handler);
-    if (err == ESP_ERR_INVALID_ARG)
-    {
-        ESP_LOGE(TAG, "Could not unregister the event handler! Invalid combination of event base and event id!");
-        return err;
-    }
-    else if (err != ESP_OK)
-    {
-        ESP_LOGE(TAG, "Could not register the event handler to the system event loop!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Stop WiFi
     err = esp_wifi_stop();
-    if (err == ESP_ERR_WIFI_NOT_INIT) {
-        ESP_LOGW(TAG, "WiFi is not initialized by esp_wifi_init!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Deinit WiFi. Free all resource allocated in esp_wifi_init and stop WiFi task.
     err = esp_wifi_deinit();
-    if (err == ESP_ERR_WIFI_NOT_INIT) {
-        ESP_LOGW(TAG, "WiFi is not initialized by esp_wifi_init!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     err = esp_event_loop_delete_default();
-    if (err == ESP_ERR_WIFI_NOT_INIT) {
-        ESP_LOGW(TAG, "WiFi is not initialized by esp_wifi_init!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
 
     // Clear default wifi event handlers for supplied network interface.
     err = esp_wifi_clear_default_wifi_driver_and_handlers(ap_netif);
-    if (err != ESP_OK) {
-        ESP_LOGW(TAG, "Could not clear default wifi event handlers for supplied network interface!");
-        return err;
+    if (err != ESP_OK){
+        return error_print_and_return(TAG, err);
     }
     
     // Destroys the esp_netif object. 
