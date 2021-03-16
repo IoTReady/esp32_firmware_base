@@ -3,6 +3,7 @@
 #include "freertos/queue.h"
 #include "esp_http_server.h"
 #include "cJSON.h"
+#include "string.h"
 #include <sys/param.h>
 
 #include "esp_log.h"
@@ -26,12 +27,7 @@
 #define REPORT_DELAY 20000
 #define STATS_TICKS pdMS_TO_TICKS(1000)
 
-TaskHandle_t *system_stats_task_handle, *softap_task_handle = NULL;
-
-// typedef struct rest_server_context {
-//     char base_path[ESP_VFS_PATH_MAX + 1];
-//     char scratch[SCRATCH_BUFSIZE];
-// } rest_server_context_t;
+TaskHandle_t *softap_task_handle = NULL;
 
 /* Simple handler for getting system handler */
 static esp_err_t system_info_get_handler(httpd_req_t *req)
@@ -77,27 +73,21 @@ static esp_err_t wifi_credential_post_handler(httpd_req_t *req)
     buf[total_len] = '\0';
 
     cJSON *root = cJSON_Parse(buf);
-    char *ssid = cJSON_GetObjectItem(root, "ssid")->valuestring;
-    char *password = cJSON_GetObjectItem(root, "password")->valuestring;
-
-    // char *ssid_str = ssid->valuestring;
-    // char *password_str = password->valuestring;
+    const char *ssid = cJSON_GetObjectItem(root, "ssid")->valuestring;
+    const char *password = cJSON_GetObjectItem(root, "password")->valuestring;
 
     ESP_LOGI(TAG, "WiFi credentials received: SSID = %s, password = %s", ssid, password);
-
-    cJSON_Delete(root);
 
     // End response
     httpd_resp_sendstr(req, "Post WiFi credentials successfully");
 
+    // Delay necessary for proper despatch of response
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+
     wifi_deinit_softap();
-    // wifi_set_credentials(ssid, password);
-    wifi_init_station((char *)ssid, (char *)password);
+    wifi_init_station(ssid, password);
 
-    // wifi_restart();
-
-
-
+    cJSON_Delete(root);
     return ESP_OK;
 }
 
@@ -160,25 +150,9 @@ void softap_task(void *pvParameter) {
 
 }
 
-void system_stats_task(void *pvParameter)
-{
-    ESP_LOGI(TAG, "Starting system stats monitor task");
-    while (1) {
-        ESP_LOGI(TAG, "Getting real time stats over %d ticks", STATS_TICKS);
-        esp_err_t res = system_print_real_time_stats(STATS_TICKS);
-        if (res == ESP_OK) {
-            ESP_LOGI(TAG, "Real time stats obtained\n");
-        } else {
-            ESP_LOGE(TAG, "Error getting real time stats: %d\n", res);
-        }
-        vTaskDelay(REPORT_DELAY / portTICK_PERIOD_MS);
-    }
-}
-
 
 void initialize_tasks()
 {
-    // xTaskCreate(&system_stats_task, "system_stats_task", MEDIUM_STACK, NULL, LOW_PRIORITY, system_stats_task_handle);
     xTaskCreate(&softap_task, "softap_task", LARGE_STACK, NULL, LOW_PRIORITY, softap_task_handle);
 }
 

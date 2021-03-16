@@ -64,41 +64,35 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("A\n");
     // Create default event loop
     err = esp_event_loop_create_default();
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("B\n");
 
     // Create default WIFI AP. In case of any init error this API aborts.
     ap_netif = esp_netif_create_default_wifi_sta();
 
     // Store default WiFi Init configurations
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-printf("C\n");
 
     // Init WiFi Alloc resource
     err = esp_wifi_init(&cfg);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("D\n");
 
     // Register the WiFi event handler to the system event loop
     err = esp_event_handler_register(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler, NULL);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("E\n");
 
     // Register the IP event handler to the system event loop
     err = esp_event_handler_register(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler, NULL);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("F\n");
 
     // Station configuration settings
     wifi_config_t wifi_config = {
@@ -118,29 +112,24 @@ printf("F\n");
     };
     strcpy((char*)wifi_config.ap.ssid, wifi_ssid);
     strcpy((char*)wifi_config.ap.password, wifi_password);
-printf("G\n");
 
     // Set the WiFi operating mode to Station.
     err = esp_wifi_set_mode(WIFI_MODE_STA);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("H\n");
 
     // Set the configuration of the ESP32 Station.
     err = esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("I\n");
 
     // Start WiFi according to current configuration
     err = esp_wifi_start();
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("J\n");
-
 
     ESP_LOGI(TAG, "wifi_init_station finished.");
 
@@ -151,7 +140,6 @@ printf("J\n");
             pdFALSE,
             pdFALSE,
             portMAX_DELAY);
-printf("K\n");
 
     /* xEventGroupWaitBits() returns the bits before the call returned, hence we can test which event actually
      * happened. */
@@ -169,13 +157,11 @@ printf("K\n");
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("L\n");
 
     err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler);
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-printf("M\n");
 
     vEventGroupDelete(s_wifi_event_group);
 
