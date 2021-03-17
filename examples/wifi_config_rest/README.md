@@ -1,8 +1,5 @@
 # WiFi Config Rest Example
 
-Starts a WiFi softap for 30 seconds and ends it.
-
-See the corresponding [README.md](../../lib/wifi_softap/README.md) file in the corresponding 'lib' directory for more information on this module.
 ## Overview
 
 This example introduces how to implement a RESTful API server and HTTP server on ESP32 using our ESP32 framework built on top of the ESP-IDF. While doing so, it also exhibits handling of the common use-case of configuring the ESP32 to connect to the desired WiFi network remotely through a simple HTTP call. 
