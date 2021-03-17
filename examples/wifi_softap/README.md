@@ -1,11 +1,4 @@
 # WiFi SoftAP Example
-
-Starts a WiFi softap for 30 seconds and ends it.
-
-See the corresponding [README.md](../../lib/wifi_softap/README.md) file in the corresponding 'lib' directory for more information on this module.
-
-# System Statistics Example
-
 ## Overview
 
 This example introduces how to use our [wifi_softap_interface](../../lib/wifi_softap_interface) library to start a WiFi softap for 30 seconds and stop it.
@@ -28,3 +21,5 @@ The library used in this example are:
 
 To run this example, you need:
 - An ESP32 dev board (e.g. ESP32-WROVER Kit, ESP32-Ethernet-Kit) or ESP32 core board (e.g. ESP32-DevKitC).
+
+> See the corresponding [README.md](../../lib/wifi_softap/README.md) file in the corresponding 'lib' directory for more information on this module.
