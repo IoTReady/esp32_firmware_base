@@ -13,10 +13,16 @@
 
 #define TAG "TASKS"
 
-// #define CONFIG_ESP_WIFI_SSID        "iotready"
-#define CONFIG_ESP_WIFI_PASSWORD    "getiotready"
-#define CONFIG_ESP_WIFI_CHANNEL     1
-#define CONFIG_ESP_MAX_STA_CONN     4
+/* The examples use WiFi configuration that you can set via project configuration menu.
+
+   If you'd rather not, just change the below entries to strings with
+   the config you want. However, if you want to use a custom SSID, set CONFIG_USE_CUSTOM_SSID.
+
+*/
+#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
+#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+#define EXAMPLE_ESP_WIFI_CHANNEL   CONFIG_ESP_WIFI_CHANNEL
+#define EXAMPLE_MAX_STA_CONN       CONFIG_ESP_MAX_STA_CONN
 
 #define REPORT_DELAY 20000
 #define STATS_TICKS pdMS_TO_TICKS(1000)
@@ -25,9 +31,13 @@ TaskHandle_t *system_stats_task_handle, *softap_task_handle = NULL;
 
 void softap_task(void *pvParameter) {
 
-    char *device_id = get_device_id();
     char *softap_ssid[17];
-    sprintf(softap_ssid, "IoT-%s", device_id);
+#if (CONFIG_USE_CUSTOM_SSID)
+    sprintf(softap_ssid, EXAMPLE_ESP_WIFI_SSID);
+#else /* #if (CONFIG_USE_CUSTOM_SSID) */
+    char *device_id = get_device_id();
+    sprintf(softap_ssid, "IoT-%s", device_id);     
+#endif /* #if (CONFIG_USE_CUSTOM_SSID) */
 
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
@@ -37,7 +47,7 @@ void softap_task(void *pvParameter) {
     }
 
     // Initialize softAP
-    wifi_init_softap(softap_ssid, CONFIG_ESP_WIFI_PASSWORD, CONFIG_ESP_WIFI_CHANNEL, CONFIG_ESP_MAX_STA_CONN);
+    wifi_init_softap(softap_ssid, EXAMPLE_ESP_WIFI_PASS, EXAMPLE_ESP_WIFI_CHANNEL, EXAMPLE_MAX_STA_CONN);
     vTaskDelay(30000 / portTICK_PERIOD_MS);
 
     // De-Initialize softAP
