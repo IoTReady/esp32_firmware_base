@@ -14,10 +14,14 @@
 #define REPORT_DELAY 20000
 #define STATS_TICKS pdMS_TO_TICKS(1000)
 
-#define CONFIG_ESP_WIFI_SSID        "IoTReady"
-#define CONFIG_ESP_WIFI_PASSWORD    "getiotready"
-#define CONFIG_ESP_WIFI_CHANNEL     1
-#define CONFIG_ESP_MAX_STA_CONN     4
+/* The examples use WiFi configuration that you can set via project configuration menu
+
+   If you'd rather not, just change the below entries to strings with
+   the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
+*/
+#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
+#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+
 
 TaskHandle_t *system_stats_task_handle, *station_task_handle = NULL;
 
@@ -28,7 +32,7 @@ void system_stats_task(void *pvParameter);
 void station_task(void *pvParameter) {
 
     // Initialize softAP
-    wifi_init_station(CONFIG_ESP_WIFI_SSID, CONFIG_ESP_WIFI_PASSWORD);
+    wifi_init_station(EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
     vTaskDelay(30000 / portTICK_PERIOD_MS);
 
     // De-Initialize softAP
