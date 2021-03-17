@@ -108,7 +108,7 @@ static esp_err_t start_rest_server()
     ESP_LOGI(TAG, "Registering URI handlers");
     /* URI handler for fetching system info */
     httpd_uri_t system_info_get_uri = {
-        .uri = "/api/v1/system/info",
+        .uri = "/api/system/info",
         .method = HTTP_GET,
         .handler = system_info_get_handler,
         .user_ctx = NULL
