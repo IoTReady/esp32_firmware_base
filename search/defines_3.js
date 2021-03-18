@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['large_5fstack_112',['LARGE_STACK',['../common_8h.html#afaed10c6d470e1b14386de91658c2c41',1,'common.h']]],
-  ['larger_5fstack_113',['LARGER_STACK',['../common_8h.html#a594482d47572c52809d8ca0c7c473cff',1,'common.h']]],
-  ['largest_5fstack_114',['LARGEST_STACK',['../common_8h.html#a5cb5478cdc6b67e5026668d5986dc8a7',1,'common.h']]],
-  ['light_5fmode_5fgpio_5fnum_115',['LIGHT_MODE_GPIO_NUM',['../wifi__station_2main_2tasks_8h.html#a404db81b8fdc6c7c529bb60cf4b9aa38',1,'tasks.h']]],
-  ['low_5fpriority_116',['LOW_PRIORITY',['../common_8h.html#a9b470dff68ba3321209a33edc4638bd8',1,'common.h']]]
+  ['example_5fesp_5fwifi_5fchannel_130',['EXAMPLE_ESP_WIFI_CHANNEL',['../wifi__softap_2main_2tasks_8c.html#ac9a241fecd2104c056764fb425a9466c',1,'tasks.c']]],
+  ['example_5fesp_5fwifi_5fpass_131',['EXAMPLE_ESP_WIFI_PASS',['../wifi__softap_2main_2tasks_8c.html#ad6d09dc1b370b2971ca6849a248c0a2d',1,'EXAMPLE_ESP_WIFI_PASS():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#ad6d09dc1b370b2971ca6849a248c0a2d',1,'EXAMPLE_ESP_WIFI_PASS():&#160;tasks.c']]],
+  ['example_5fesp_5fwifi_5fssid_132',['EXAMPLE_ESP_WIFI_SSID',['../wifi__softap_2main_2tasks_8c.html#a4fb60228f865afd7f59ecff4a658a9a6',1,'EXAMPLE_ESP_WIFI_SSID():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a4fb60228f865afd7f59ecff4a658a9a6',1,'EXAMPLE_ESP_WIFI_SSID():&#160;tasks.c']]],
+  ['example_5fmax_5fsta_5fconn_133',['EXAMPLE_MAX_STA_CONN',['../wifi__softap_2main_2tasks_8c.html#a531a5f52342686f7bf976f8c3db1acea',1,'tasks.c']]]
 ];

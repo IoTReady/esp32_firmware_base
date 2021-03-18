@@ -1,9 +1,7 @@
 var wifi__station_2main_2tasks_8c =
 [
-    [ "CONFIG_ESP_MAX_STA_CONN", "wifi__station_2main_2tasks_8c.html#a10187d318b08481e79ef03b0803fd049", null ],
-    [ "CONFIG_ESP_WIFI_CHANNEL", "wifi__station_2main_2tasks_8c.html#a906ce798983e1feafbac62b138fa0ff9", null ],
-    [ "CONFIG_ESP_WIFI_PASSWORD", "wifi__station_2main_2tasks_8c.html#ae7095ceacd66a25b663b841eda4d960b", null ],
-    [ "CONFIG_ESP_WIFI_SSID", "wifi__station_2main_2tasks_8c.html#a393963c3736904d2b9ff9e714d66a9ba", null ],
+    [ "EXAMPLE_ESP_WIFI_PASS", "wifi__station_2main_2tasks_8c.html#ad6d09dc1b370b2971ca6849a248c0a2d", null ],
+    [ "EXAMPLE_ESP_WIFI_SSID", "wifi__station_2main_2tasks_8c.html#a4fb60228f865afd7f59ecff4a658a9a6", null ],
     [ "REPORT_DELAY", "wifi__station_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c", null ],
     [ "STATS_TICKS", "wifi__station_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5", null ],
     [ "TAG", "wifi__station_2main_2tasks_8c.html#afc3d101f633a076cc1ca84b85b6224b2", null ],

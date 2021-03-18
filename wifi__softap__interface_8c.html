@@ -97,14 +97,24 @@ $(document).ready(function(){initNavTree('wifi__softap__interface_8c.html',''); 
 <code>#include &quot;esp_event.h&quot;</code><br />
 <code>#include &quot;esp_log.h&quot;</code><br />
 <code>#include &quot;esp_wifi.h&quot;</code><br />
+<code>#include &quot;esp_netif.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="utilities_8h_source.html">utilities.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;SOFTAP_INTERFACE&quot;</td></tr>
 <tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b7db9837a6e76ce8b7e9e132f23e4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a96b7db9837a6e76ce8b7e9e132f23e4b">DEFAULT_ESP_WIFI_CHANNEL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a96b7db9837a6e76ce8b7e9e132f23e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19877c0ffaa7c0c9a12b05d1f89cc95"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#ad19877c0ffaa7c0c9a12b05d1f89cc95">DEFAULT_ESP_MAX_STA_CONN</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ad19877c0ffaa7c0c9a12b05d1f89cc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acb47ddac13864fb57e58536318d4d9fe"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#acb47ddac13864fb57e58536318d4d9fe">wifi_set_credentials</a> (char *ssid, char *password)</td></tr>
+<tr class="separator:acb47ddac13864fb57e58536318d4d9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2882fa1f7a7ced28211bb10cac434438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a2882fa1f7a7ced28211bb10cac434438">wifi_restart</a> ()</td></tr>
+<tr class="separator:a2882fa1f7a7ced28211bb10cac434438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a92925458a08d4dc361d8cae0e2815"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a08a92925458a08d4dc361d8cae0e2815">wifi_init_softap</a> (const char *wifi_ssid, const char *wifi_password, int channel, int max_connections)</td></tr>
 <tr class="separator:a08a92925458a08d4dc361d8cae0e2815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97c9608609a9c997bdb1228dc415c06"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#ad97c9608609a9c997bdb1228dc415c06">wifi_deinit_softap</a> ()</td></tr>
@@ -115,8 +125,40 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a91aeff1220701b1ecdc74ab211de8243"><td class="memItemLeft" align="right" valign="top">esp_netif_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a91aeff1220701b1ecdc74ab211de8243">ap_netif</a></td></tr>
 <tr class="separator:a91aeff1220701b1ecdc74ab211de8243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4745c703dd9196f777776545059444f2"><td class="memItemLeft" align="right" valign="top">esp_netif_ip_info_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a4745c703dd9196f777776545059444f2">ip</a></td></tr>
+<tr class="separator:a4745c703dd9196f777776545059444f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11201774aaac749961f9bb6dabeac94f"><td class="memItemLeft" align="right" valign="top">wifi_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8c.html#a11201774aaac749961f9bb6dabeac94f">wifi_config</a></td></tr>
+<tr class="separator:a11201774aaac749961f9bb6dabeac94f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ad19877c0ffaa7c0c9a12b05d1f89cc95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19877c0ffaa7c0c9a12b05d1f89cc95">&#9670;&nbsp;</a></span>DEFAULT_ESP_MAX_STA_CONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_ESP_MAX_STA_CONN&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96b7db9837a6e76ce8b7e9e132f23e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b7db9837a6e76ce8b7e9e132f23e4b">&#9670;&nbsp;</a></span>DEFAULT_ESP_WIFI_CHANNEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFAULT_ESP_WIFI_CHANNEL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afc3d101f633a076cc1ca84b85b6224b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc3d101f633a076cc1ca84b85b6224b2">&#9670;&nbsp;</a></span>TAG</h2>
 
@@ -198,6 +240,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a2882fa1f7a7ced28211bb10cac434438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2882fa1f7a7ced28211bb10cac434438">&#9670;&nbsp;</a></span>wifi_restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wifi_restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb47ddac13864fb57e58536318d4d9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb47ddac13864fb57e58536318d4d9fe">&#9670;&nbsp;</a></span>wifi_set_credentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_err_t wifi_set_credentials </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a91aeff1220701b1ecdc74ab211de8243"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91aeff1220701b1ecdc74ab211de8243">&#9670;&nbsp;</a></span>ap_netif</h2>
@@ -211,6 +298,43 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a4745c703dd9196f777776545059444f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4745c703dd9196f777776545059444f2">&#9670;&nbsp;</a></span>ip</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">esp_netif_ip_info_t ip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11201774aaac749961f9bb6dabeac94f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11201774aaac749961f9bb6dabeac94f">&#9670;&nbsp;</a></span>wifi_config</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wifi_config_t wifi_config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    .ap = {</div>
+<div class="line">        .channel = <a class="code" href="wifi__softap__interface_8c.html#a96b7db9837a6e76ce8b7e9e132f23e4b">DEFAULT_ESP_WIFI_CHANNEL</a>,</div>
+<div class="line">        .max_connection = <a class="code" href="wifi__softap__interface_8c.html#ad19877c0ffaa7c0c9a12b05d1f89cc95">DEFAULT_ESP_MAX_STA_CONN</a>,</div>
+<div class="line">        .authmode = WIFI_AUTH_WPA_WPA2_PSK</div>
+<div class="line">    },</div>
+<div class="line">}</div>
+<div class="ttc" id="awifi__softap__interface_8c_html_a96b7db9837a6e76ce8b7e9e132f23e4b"><div class="ttname"><a href="wifi__softap__interface_8c.html#a96b7db9837a6e76ce8b7e9e132f23e4b">DEFAULT_ESP_WIFI_CHANNEL</a></div><div class="ttdeci">#define DEFAULT_ESP_WIFI_CHANNEL</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:10</div></div>
+<div class="ttc" id="awifi__softap__interface_8c_html_ad19877c0ffaa7c0c9a12b05d1f89cc95"><div class="ttname"><a href="wifi__softap__interface_8c.html#ad19877c0ffaa7c0c9a12b05d1f89cc95">DEFAULT_ESP_MAX_STA_CONN</a></div><div class="ttdeci">#define DEFAULT_ESP_MAX_STA_CONN</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:11</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

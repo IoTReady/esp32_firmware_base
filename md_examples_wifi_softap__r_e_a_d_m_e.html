@@ -89,8 +89,37 @@ $(document).ready(function(){initNavTree('md_examples_wifi_softap__r_e_a_d_m_e.h
 <div class="title">WiFi SoftAP Example </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Starts a WiFi softap for 30 seconds and ends it.</p>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md13"></a>
+Overview</h1>
+<p>This example introduces how to use our <a href="../../lib/wifi_softap_interface">wifi_softap_interface</a> library to start a WiFi softap for 30 seconds and stop it.</p>
+<p>The library used in this example are:</p><ul>
+<li><a href="../../lib/wifi_softap_interface">wifi_softap_interface</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md14"></a>
+How to use example</h1>
+<ul>
+<li>Build and flash the example normally as any other ESP-IDF project. No special configuration is required during this process.</li>
+<li>The device will create a softap(hotspot) with the following credentials:</li>
+</ul>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Parameter   </th><th class="markdownTableHeadNone">Value    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SSID   </td><td class="markdownTableBodyNone">IoT-&lt;12-digit-mac-ID-of-the-device&gt;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Password   </td><td class="markdownTableBodyNone">getiotready   </td></tr>
+</table>
+<ul>
+<li>The password can be changed by editing the <code>CONFIG_ESP_WIFI_PASSWORD</code> macro in <a href="./main/tasks.c">tasks.c</a></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Hardware Required</h2>
+<p>To run this example, you need:</p><ul>
+<li>An ESP32 dev board (e.g. ESP32-WROVER Kit, ESP32-Ethernet-Kit) or ESP32 core board (e.g. ESP32-DevKitC).</li>
+</ul>
+<blockquote class="doxtable">
 <p>See the corresponding <a class="el" href="md_lib_wifi_softap__r_e_a_d_m_e.html">README.md</a> file in the corresponding 'lib' directory for more information on this module. </p>
+</blockquote>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -26,12 +26,45 @@ var NAVTREE =
 [
   [ "ESP32 Quick Start Building Blocks", "index.html", [
     [ "IoTReady Firmware Base for ESP32", "index.html", [
-      [ "Goals (in order of priority)", "index.html#autotoc_md15", null ],
-      [ "References", "index.html#autotoc_md16", null ],
-      [ "Inspirations", "index.html#autotoc_md17", null ]
+      [ "Goals (in order of priority)", "index.html#autotoc_md33", null ],
+      [ "References", "index.html#autotoc_md34", null ],
+      [ "Inspirations", "index.html#autotoc_md35", null ]
     ] ],
-    [ "WiFi SoftAP Example", "md_examples_wifi_softap__r_e_a_d_m_e.html", null ],
-    [ "WiFi Station Example", "md_examples_wifi_station__r_e_a_d_m_e.html", null ],
+    [ "Easy EPS32 applications with building blocks - Network configuration.", "md_article.html", null ],
+    [ "System Statistics Example", "md_examples_system_statistics__r_e_a_d_m_e.html", [
+      [ "Overview", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "How to use example", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "Project Structure", "index.html#autotoc_md27", null ],
+        [ "Goal Framework Modules", "index.html#autotoc_md28", [
+          [ "v1.0", "index.html#autotoc_md29", null ],
+          [ "Post v1.0", "index.html#autotoc_md30", null ]
+        ] ],
+        [ "Stretch Goals", "index.html#autotoc_md31", null ],
+        [ "Non Goals", "index.html#autotoc_md32", null ],
+        [ "This brings me to why I'm writing this article:", "md_article.html#autotoc_md1", null ],
+        [ "IoTReady ESP32 Framework", "md_article.html#autotoc_md2", null ],
+        [ "Hardware Required", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md6", null ]
+      ] ]
+    ] ],
+    [ "WiFi Config Rest Example", "md_examples_wifi_config_rest__r_e_a_d_m_e.html", [
+      [ "Overview", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "API Documentation", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md9", null ],
+      [ "How to use example", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md10", [
+        [ "Hardware Required", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md11", null ]
+      ] ]
+    ] ],
+    [ "WiFi SoftAP Example", "md_examples_wifi_softap__r_e_a_d_m_e.html", [
+      [ "Overview", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md13", null ],
+      [ "How to use example", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md14", [
+        [ "Hardware Required", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md15", null ]
+      ] ]
+    ] ],
+    [ "WiFi Station Example", "md_examples_wifi_station__r_e_a_d_m_e.html", [
+      [ "Overview", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md17", null ],
+      [ "How to use example", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md18", [
+        [ "Hardware Required", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md19", null ]
+      ] ]
+    ] ],
     [ "Clean, abstracted library for WiFi softAP control", "md_lib_wifi_softap__r_e_a_d_m_e.html", null ],
     [ "Clean, abstracted library for WiFi station control", "md_lib_wifi_station__r_e_a_d_m_e.html", null ],
     [ "Files", "files.html", [

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_2ec_67',['main.c',['../system__statistics_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2main_8c.html',1,'(Global Namespace)']]]
+  ['common_2ec_79',['common.c',['../common_8c.html',1,'']]],
+  ['common_2eh_80',['common.h',['../common_8h.html',1,'']]]
 ];

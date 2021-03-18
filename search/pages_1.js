@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iotready_20firmware_20base_20for_20esp32_127',['IoTReady Firmware Base for ESP32',['../index.html',1,'']]]
+  ['easy_20eps32_20applications_20with_20building_20blocks_20_2d_20network_20configuration_2e_150',['Easy EPS32 applications with building blocks - Network configuration.',['../md_article.html',1,'']]]
 ];

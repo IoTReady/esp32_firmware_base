@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_26',['README.md',['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
-  ['report_5fdelay_27',['REPORT_DELAY',['../system__statistics_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c']]]
+  ['main_2ec_32',['main.c',['../system__statistics_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__config__rest_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2main_8c.html',1,'(Global Namespace)']]],
+  ['medium_5fstack_33',['MEDIUM_STACK',['../common_8h.html#ac8acf1a5aa796b689fb1043485005e1a',1,'common.h']]]
 ];

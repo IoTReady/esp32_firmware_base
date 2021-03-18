@@ -91,11 +91,16 @@ $(document).ready(function(){initNavTree('wifi__softap__interface_8h.html',''); 
 <div class="title">wifi_softap_interface.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;esp_wifi.h&gt;</code><br />
+</div>
 <p><a href="wifi__softap__interface_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2882fa1f7a7ced28211bb10cac434438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8h.html#a2882fa1f7a7ced28211bb10cac434438">wifi_restart</a> ()</td></tr>
+<tr class="separator:a2882fa1f7a7ced28211bb10cac434438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445ffa9ebed45771a3ed330cd85e9d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8h.html#a445ffa9ebed45771a3ed330cd85e9d8e">wifi_set_credentials</a> (char *ssid, char *password)</td></tr>
+<tr class="separator:a445ffa9ebed45771a3ed330cd85e9d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7d10008457a0e978d811d0d9990b88"><td class="memItemLeft" align="right" valign="top">esp_err_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">wifi_init_softap</a> (char *wifi_ssid, char *wifi_password, int channel, int max_connections)</td></tr>
 <tr class="memdesc:a8c7d10008457a0e978d811d0d9990b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize softAP.  <a href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">More...</a><br /></td></tr>
 <tr class="separator:a8c7d10008457a0e978d811d0d9990b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +191,51 @@ Functions</h2></td></tr>
 <li>ESP_ERR_WIFI_CONN: WiFi internal error, station or soft-AP control block wrong </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a2882fa1f7a7ced28211bb10cac434438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2882fa1f7a7ced28211bb10cac434438">&#9670;&nbsp;</a></span>wifi_restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wifi_restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a445ffa9ebed45771a3ed330cd85e9d8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a445ffa9ebed45771a3ed330cd85e9d8e">&#9670;&nbsp;</a></span>wifi_set_credentials()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wifi_set_credentials </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ssid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

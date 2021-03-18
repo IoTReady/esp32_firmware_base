@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['high_5fpriority_111',['HIGH_PRIORITY',['../common_8h.html#aed801c122c559efe4677d351d07747b4',1,'common.h']]]
+  ['default_5fesp_5fmax_5fsta_5fconn_128',['DEFAULT_ESP_MAX_STA_CONN',['../wifi__softap__interface_8c.html#ad19877c0ffaa7c0c9a12b05d1f89cc95',1,'wifi_softap_interface.c']]],
+  ['default_5fesp_5fwifi_5fchannel_129',['DEFAULT_ESP_WIFI_CHANNEL',['../wifi__softap__interface_8c.html#a96b7db9837a6e76ce8b7e9e132f23e4b',1,'wifi_softap_interface.c']]]
 ];
