@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queues_2ec_509',['queues.c',['../queues_8c.html',1,'']]],
-  ['queues_2eh_510',['queues.h',['../queues_8h.html',1,'']]]
+  ['readme_2emd_59',['README.md',['../examples_2gpio_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2system__statistics_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__config__rest_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
+  ['report_5fdelay_60',['REPORT_DELAY',['../system__statistics_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__config__rest_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c']]]
 ];

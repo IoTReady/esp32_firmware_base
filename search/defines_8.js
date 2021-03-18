@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['report_5fdelay_1100',['REPORT_DELAY',['../system__statistics_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__config__rest_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c',1,'REPORT_DELAY():&#160;tasks.c']]]
+  ['small_5fstack_193',['SMALL_STACK',['../common_8h.html#a66baa93f7fe859c284b27e5927d2c955',1,'common.h']]],
+  ['stats_5fticks_194',['STATS_TICKS',['../system__statistics_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__config__rest_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c']]]
 ];
