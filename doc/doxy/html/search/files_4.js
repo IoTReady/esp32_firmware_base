@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tasks_2ec_71',['tasks.c',['../system__statistics_2main_2tasks_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2tasks_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2tasks_8c.html',1,'(Global Namespace)']]],
-  ['tasks_2eh_72',['tasks.h',['../system__statistics_2main_2tasks_8h.html',1,'(Global Namespace)'],['../wifi__softap_2main_2tasks_8h.html',1,'(Global Namespace)'],['../wifi__station_2main_2tasks_8h.html',1,'(Global Namespace)']]]
+  ['system_5fstats_2ec_83',['system_stats.c',['../system__stats_8c.html',1,'']]],
+  ['system_5fstats_2eh_84',['system_stats.h',['../system__stats_8h.html',1,'']]]
 ];

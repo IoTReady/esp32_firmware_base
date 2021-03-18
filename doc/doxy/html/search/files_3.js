@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['system_5fstats_2ec_69',['system_stats.c',['../system__stats_8c.html',1,'']]],
-  ['system_5fstats_2eh_70',['system_stats.h',['../system__stats_8h.html',1,'']]]
+  ['readme_2emd_82',['README.md',['../examples_2system__statistics_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__config__rest_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]]
 ];

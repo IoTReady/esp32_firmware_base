@@ -92,14 +92,35 @@ $(document).ready(function(){initNavTree('wifi__softap__interface_8h_source.html
 <a href="wifi__softap__interface_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __SOFTAP_INTERFACE_H__</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __SOFTAP_INTERFACE_H__ 1</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">   25</a></span>&#160;esp_err_t <a class="code" href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">wifi_init_softap</a>(<span class="keywordtype">char</span> *wifi_ssid, <span class="keywordtype">char</span> *wifi_password, <span class="keywordtype">int</span> channel,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                           <span class="keywordtype">int</span> max_connections);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;esp_err_t <a class="code" href="wifi__softap__interface_8h.html#ad97c9608609a9c997bdb1228dc415c06">wifi_deinit_softap</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __SOFTAP_INTERFACE_H__</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;esp_wifi.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// #define DEFAULT_ESP_WIFI_CHANNEL 1</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// #define DEFAULT_ESP_MAX_STA_CONN 4</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// // Soft-AP configuration settings</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// wifi_config_t wifi_config = {</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//     .ap = {</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//         .channel = DEFAULT_ESP_WIFI_CHANNEL,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//         .max_connection = DEFAULT_ESP_MAX_STA_CONN,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//         .authmode = WIFI_AUTH_WPA_WPA2_PSK</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//     },</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// };</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wifi__softap__interface_8h.html#a2882fa1f7a7ced28211bb10cac434438">wifi_restart</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="wifi__softap__interface_8h.html#a445ffa9ebed45771a3ed330cd85e9d8e">wifi_set_credentials</a>(<span class="keywordtype">char</span>* ssid, <span class="keywordtype">char</span>* password);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">   44</a></span>&#160;esp_err_t <a class="code" href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">wifi_init_softap</a>(<span class="keywordtype">char</span> *wifi_ssid, <span class="keywordtype">char</span> *wifi_password, <span class="keywordtype">int</span> channel,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           <span class="keywordtype">int</span> max_connections);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;esp_err_t <a class="code" href="wifi__softap__interface_8h.html#ad97c9608609a9c997bdb1228dc415c06">wifi_deinit_softap</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __SOFTAP_INTERFACE_H__</span></div>
+<div class="ttc" id="awifi__softap__interface_8h_html_a2882fa1f7a7ced28211bb10cac434438"><div class="ttname"><a href="wifi__softap__interface_8h.html#a2882fa1f7a7ced28211bb10cac434438">wifi_restart</a></div><div class="ttdeci">void wifi_restart()</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:55</div></div>
+<div class="ttc" id="awifi__softap__interface_8h_html_a445ffa9ebed45771a3ed330cd85e9d8e"><div class="ttname"><a href="wifi__softap__interface_8h.html#a445ffa9ebed45771a3ed330cd85e9d8e">wifi_set_credentials</a></div><div class="ttdeci">void wifi_set_credentials(char *ssid, char *password)</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:40</div></div>
 <div class="ttc" id="awifi__softap__interface_8h_html_a8c7d10008457a0e978d811d0d9990b88"><div class="ttname"><a href="wifi__softap__interface_8h.html#a8c7d10008457a0e978d811d0d9990b88">wifi_init_softap</a></div><div class="ttdeci">esp_err_t wifi_init_softap(char *wifi_ssid, char *wifi_password, int channel, int max_connections)</div><div class="ttdoc">Initialize softAP.</div></div>
-<div class="ttc" id="awifi__softap__interface_8h_html_ad97c9608609a9c997bdb1228dc415c06"><div class="ttname"><a href="wifi__softap__interface_8h.html#ad97c9608609a9c997bdb1228dc415c06">wifi_deinit_softap</a></div><div class="ttdeci">esp_err_t wifi_deinit_softap()</div><div class="ttdoc">De-initialize softAP.</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:192</div></div>
+<div class="ttc" id="awifi__softap__interface_8h_html_ad97c9608609a9c997bdb1228dc415c06"><div class="ttname"><a href="wifi__softap__interface_8h.html#ad97c9608609a9c997bdb1228dc415c06">wifi_deinit_softap</a></div><div class="ttdeci">esp_err_t wifi_deinit_softap()</div><div class="ttdoc">De-initialize softAP.</div><div class="ttdef"><b>Definition:</b> wifi_softap_interface.c:143</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->

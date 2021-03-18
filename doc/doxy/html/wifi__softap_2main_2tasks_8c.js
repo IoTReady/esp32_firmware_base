@@ -1,8 +1,9 @@
 var wifi__softap_2main_2tasks_8c =
 [
-    [ "CONFIG_ESP_MAX_STA_CONN", "wifi__softap_2main_2tasks_8c.html#a10187d318b08481e79ef03b0803fd049", null ],
-    [ "CONFIG_ESP_WIFI_CHANNEL", "wifi__softap_2main_2tasks_8c.html#a906ce798983e1feafbac62b138fa0ff9", null ],
-    [ "CONFIG_ESP_WIFI_PASSWORD", "wifi__softap_2main_2tasks_8c.html#ae7095ceacd66a25b663b841eda4d960b", null ],
+    [ "EXAMPLE_ESP_WIFI_CHANNEL", "wifi__softap_2main_2tasks_8c.html#ac9a241fecd2104c056764fb425a9466c", null ],
+    [ "EXAMPLE_ESP_WIFI_PASS", "wifi__softap_2main_2tasks_8c.html#ad6d09dc1b370b2971ca6849a248c0a2d", null ],
+    [ "EXAMPLE_ESP_WIFI_SSID", "wifi__softap_2main_2tasks_8c.html#a4fb60228f865afd7f59ecff4a658a9a6", null ],
+    [ "EXAMPLE_MAX_STA_CONN", "wifi__softap_2main_2tasks_8c.html#a531a5f52342686f7bf976f8c3db1acea", null ],
     [ "REPORT_DELAY", "wifi__softap_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c", null ],
     [ "STATS_TICKS", "wifi__softap_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5", null ],
     [ "TAG", "wifi__softap_2main_2tasks_8c.html#afc3d101f633a076cc1ca84b85b6224b2", null ],

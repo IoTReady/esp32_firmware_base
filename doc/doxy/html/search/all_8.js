@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['main_2ec_24',['main.c',['../system__statistics_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2main_8c.html',1,'(Global Namespace)']]],
-  ['medium_5fstack_25',['MEDIUM_STACK',['../common_8h.html#ac8acf1a5aa796b689fb1043485005e1a',1,'common.h']]]
+  ['large_5fstack_27',['LARGE_STACK',['../common_8h.html#afaed10c6d470e1b14386de91658c2c41',1,'common.h']]],
+  ['larger_5fstack_28',['LARGER_STACK',['../common_8h.html#a594482d47572c52809d8ca0c7c473cff',1,'common.h']]],
+  ['largest_5fstack_29',['LARGEST_STACK',['../common_8h.html#a5cb5478cdc6b67e5026668d5986dc8a7',1,'common.h']]],
+  ['light_5fmode_5fgpio_5fnum_30',['LIGHT_MODE_GPIO_NUM',['../wifi__station_2main_2tasks_8h.html#a404db81b8fdc6c7c529bb60cf4b9aa38',1,'tasks.h']]],
+  ['low_5fpriority_31',['LOW_PRIORITY',['../common_8h.html#a9b470dff68ba3321209a33edc4638bd8',1,'common.h']]]
 ];

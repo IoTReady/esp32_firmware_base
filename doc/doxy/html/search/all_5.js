@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['high_5fpriority_16',['HIGH_PRIORITY',['../common_8h.html#aed801c122c559efe4677d351d07747b4',1,'common.h']]]
+  ['get_5fdevice_5fid_22',['get_device_id',['../common_8c.html#a231482c6d0e377e8842b842c97be8f99',1,'get_device_id():&#160;common.c'],['../common_8h.html#a231482c6d0e377e8842b842c97be8f99',1,'get_device_id():&#160;common.c']]]
 ];

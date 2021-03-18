@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wifi_5fconnected_5fbit_123',['WIFI_CONNECTED_BIT',['../wifi__station__interface_8c.html#ad552e7688532cbbecd3967538ced06ac',1,'wifi_station_interface.c']]],
-  ['wifi_5ffail_5fbit_124',['WIFI_FAIL_BIT',['../wifi__station__interface_8c.html#a7d013b55e50dfbda0904f5f933b63ec4',1,'wifi_station_interface.c']]]
+  ['small_5fstack_142',['SMALL_STACK',['../common_8h.html#a66baa93f7fe859c284b27e5927d2c955',1,'common.h']]],
+  ['stats_5fticks_143',['STATS_TICKS',['../system__statistics_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__config__rest_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5',1,'STATS_TICKS():&#160;tasks.c']]]
 ];

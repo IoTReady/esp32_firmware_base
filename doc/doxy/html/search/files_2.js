@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_68',['README.md',['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]]
+  ['main_2ec_81',['main.c',['../system__statistics_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__config__rest_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2main_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2main_8c.html',1,'(Global Namespace)']]]
 ];

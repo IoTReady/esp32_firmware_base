@@ -107,12 +107,14 @@ $(document).ready(function(){initNavTree('wifi__softap_2main_2tasks_8c.html','')
 Macros</h2></td></tr>
 <tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;TASKS&quot;</td></tr>
 <tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7095ceacd66a25b663b841eda4d960b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#ae7095ceacd66a25b663b841eda4d960b">CONFIG_ESP_WIFI_PASSWORD</a>&#160;&#160;&#160;&quot;getiotready&quot;</td></tr>
-<tr class="separator:ae7095ceacd66a25b663b841eda4d960b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a906ce798983e1feafbac62b138fa0ff9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a906ce798983e1feafbac62b138fa0ff9">CONFIG_ESP_WIFI_CHANNEL</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:a906ce798983e1feafbac62b138fa0ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10187d318b08481e79ef03b0803fd049"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a10187d318b08481e79ef03b0803fd049">CONFIG_ESP_MAX_STA_CONN</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:a10187d318b08481e79ef03b0803fd049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb60228f865afd7f59ecff4a658a9a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a4fb60228f865afd7f59ecff4a658a9a6">EXAMPLE_ESP_WIFI_SSID</a>&#160;&#160;&#160;CONFIG_ESP_WIFI_SSID</td></tr>
+<tr class="separator:a4fb60228f865afd7f59ecff4a658a9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d09dc1b370b2971ca6849a248c0a2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#ad6d09dc1b370b2971ca6849a248c0a2d">EXAMPLE_ESP_WIFI_PASS</a>&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#ae7095ceacd66a25b663b841eda4d960b">CONFIG_ESP_WIFI_PASSWORD</a></td></tr>
+<tr class="separator:ad6d09dc1b370b2971ca6849a248c0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a241fecd2104c056764fb425a9466c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#ac9a241fecd2104c056764fb425a9466c">EXAMPLE_ESP_WIFI_CHANNEL</a>&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#a906ce798983e1feafbac62b138fa0ff9">CONFIG_ESP_WIFI_CHANNEL</a></td></tr>
+<tr class="separator:ac9a241fecd2104c056764fb425a9466c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531a5f52342686f7bf976f8c3db1acea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a531a5f52342686f7bf976f8c3db1acea">EXAMPLE_MAX_STA_CONN</a>&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#a10187d318b08481e79ef03b0803fd049">CONFIG_ESP_MAX_STA_CONN</a></td></tr>
+<tr class="separator:a531a5f52342686f7bf976f8c3db1acea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d32d087262b3c4ba5b33a54f4e2618c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a1d32d087262b3c4ba5b33a54f4e2618c">REPORT_DELAY</a>&#160;&#160;&#160;20000</td></tr>
 <tr class="separator:a1d32d087262b3c4ba5b33a54f4e2618c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a180caf769e3cb391a833e441cb2c6fd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wifi__softap_2main_2tasks_8c.html#a180caf769e3cb391a833e441cb2c6fd5">STATS_TICKS</a>&#160;&#160;&#160;pdMS_TO_TICKS(1000)</td></tr>
@@ -135,42 +137,56 @@ Variables</h2></td></tr>
 <tr class="separator:a1ee595adc0015f815ca45e2485ac8bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a10187d318b08481e79ef03b0803fd049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10187d318b08481e79ef03b0803fd049">&#9670;&nbsp;</a></span>CONFIG_ESP_MAX_STA_CONN</h2>
+<a id="ac9a241fecd2104c056764fb425a9466c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a241fecd2104c056764fb425a9466c">&#9670;&nbsp;</a></span>EXAMPLE_ESP_WIFI_CHANNEL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONFIG_ESP_MAX_STA_CONN&#160;&#160;&#160;4</td>
+          <td class="memname">#define EXAMPLE_ESP_WIFI_CHANNEL&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#a906ce798983e1feafbac62b138fa0ff9">CONFIG_ESP_WIFI_CHANNEL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a906ce798983e1feafbac62b138fa0ff9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a906ce798983e1feafbac62b138fa0ff9">&#9670;&nbsp;</a></span>CONFIG_ESP_WIFI_CHANNEL</h2>
+<a id="ad6d09dc1b370b2971ca6849a248c0a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d09dc1b370b2971ca6849a248c0a2d">&#9670;&nbsp;</a></span>EXAMPLE_ESP_WIFI_PASS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONFIG_ESP_WIFI_CHANNEL&#160;&#160;&#160;1</td>
+          <td class="memname">#define EXAMPLE_ESP_WIFI_PASS&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#ae7095ceacd66a25b663b841eda4d960b">CONFIG_ESP_WIFI_PASSWORD</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae7095ceacd66a25b663b841eda4d960b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7095ceacd66a25b663b841eda4d960b">&#9670;&nbsp;</a></span>CONFIG_ESP_WIFI_PASSWORD</h2>
+<a id="a4fb60228f865afd7f59ecff4a658a9a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fb60228f865afd7f59ecff4a658a9a6">&#9670;&nbsp;</a></span>EXAMPLE_ESP_WIFI_SSID</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CONFIG_ESP_WIFI_PASSWORD&#160;&#160;&#160;&quot;getiotready&quot;</td>
+          <td class="memname">#define EXAMPLE_ESP_WIFI_SSID&#160;&#160;&#160;CONFIG_ESP_WIFI_SSID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a531a5f52342686f7bf976f8c3db1acea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531a5f52342686f7bf976f8c3db1acea">&#9670;&nbsp;</a></span>EXAMPLE_MAX_STA_CONN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXAMPLE_MAX_STA_CONN&#160;&#160;&#160;<a class="el" href="wifi__config__rest_2main_2tasks_8c.html#a10187d318b08481e79ef03b0803fd049">CONFIG_ESP_MAX_STA_CONN</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
