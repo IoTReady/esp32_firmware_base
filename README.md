@@ -59,8 +59,7 @@ Remote device configuration is a very specific but common use-case that IoT enab
 - GPIO Interface: Initialize, enable ISR, get/set state uxTaskGetSystemState
   - Example: Atleast one button, one led and one interrupt service routine using queues to share state.
 - WiFi Hotspot/Softap API: Initialize, create hotspot
-  - Example: Create a hotspot and create/render a QR code that contains info about the wifi credentials to be used to connect to it easily.
-  - REST API for WiFi SSID and password configuration to then connect to another AP.
+  - Example: REST API for WiFi SSID and password configuration to then connect to another AP.
 - WiFi Station: Initialize, connect to an external AP.
   - Ability to connect to external WPA2-PSK Access Point
   - Example code that gets the Access Point credentials from REST API call
