@@ -29,6 +29,7 @@ esp_err_t gpio_init_interface();
  * Call this function after using gpio_install_isr_service() to install the driver’s GPIO ISR handler service. This function also sets up a handler that fills the queue "gpio_input_queue".
  *
  * @param gpio_num GPIO number
+ * @param isr_handler ISR handler callback function
  * 
  * @return
  *    - ESP_OK: Success
@@ -36,7 +37,6 @@ esp_err_t gpio_init_interface();
  *    - ESP_ERR_INVALID_ARG: Parameter error
  * 
  */
-// esp_err_t gpio_enable_pin_isr(int gpio_num);
 esp_err_t gpio_enable_pin_isr(int gpio_num, gpio_isr_t isr_handler);
 
 

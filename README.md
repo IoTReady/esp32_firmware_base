@@ -54,7 +54,7 @@ Remote device configuration is a very specific but common use-case that IoT enab
 
 ### Roadmap
 #### v1.0
-- System Status API: get [free heap sizes](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/system.html#_CPPv422esp_get_free_heap_size), [task status](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/freertos.html?highlight=uxtaskgetsystemstate#_CPPv420uxTaskGetSystemStatePC12TaskStatus_tK11UBaseType_tPC8uint32_t), [run-time stats](https://www.freertos.org/rtos-run-time-stats.html)
+- System Status API: get free heap sizes, task status, run-time stats
   - Example: Run multiple sample tasks and periodically print system stats.
 - GPIO Interface: Initialize, enable ISR, get/set state uxTaskGetSystemState
   - Example: Atleast one button, one led and one interrupt service routine using queues to share state.
@@ -102,7 +102,7 @@ Fork -> Modify -> Submit PR
 
 ## Inspirations
 - [Node-RED](https://nodered.org/)
-- [Nerves]()
+- [Nerves](https://www.nerves-project.org/platform)
 - [Juniper for Arduino](http://www.juniper-lang.org/index.html)
 - [Well-typed-lightbulbs](https://github.com/well-typed-lightbulbs)
 - [Microflo](https://github.com/microflo/microflo)

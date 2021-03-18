@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utilities_2ec_87',['utilities.c',['../utilities_8c.html',1,'']]],
-  ['utilities_2eh_88',['utilities.h',['../utilities_8h.html',1,'']]]
+  ['queues_2ec_571',['queues.c',['../queues_8c.html',1,'']]],
+  ['queues_2eh_572',['queues.h',['../queues_8h.html',1,'']]]
 ];

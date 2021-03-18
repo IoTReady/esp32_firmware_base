@@ -26,54 +26,71 @@ var NAVTREE =
 [
   [ "ESP32 Quick Start Building Blocks", "index.html", [
     [ "IoTReady Firmware Base for ESP32", "index.html", [
-      [ "Goals (in order of priority)", "index.html#autotoc_md33", null ],
-      [ "References", "index.html#autotoc_md34", null ],
-      [ "Inspirations", "index.html#autotoc_md35", null ]
+      [ "This brings me to why I'm writing this article:", "index.html#autotoc_md31", null ],
+      [ "IoTReady ESP32 Framework", "index.html#autotoc_md32", [
+        [ "Goals (in order of priority)", "index.html#autotoc_md33", null ],
+        [ "Project Structure", "index.html#autotoc_md34", null ],
+        [ "Roadmap", "index.html#autotoc_md35", [
+          [ "v1.0", "index.html#autotoc_md36", null ],
+          [ "Post v1.0", "index.html#autotoc_md37", null ]
+        ] ],
+        [ "Stretch Goals", "index.html#autotoc_md38", null ]
+      ] ],
+      [ "Generating the Documentation", "index.html#autotoc_md39", null ],
+      [ "Feedback", "index.html#autotoc_md40", null ],
+      [ "Participate in the development", "index.html#autotoc_md41", null ],
+      [ "References", "index.html#autotoc_md42", null ],
+      [ "Inspirations", "index.html#autotoc_md43", null ]
     ] ],
     [ "Easy EPS32 applications with building blocks - Network configuration.", "md_article.html", null ],
+    [ "GPIO Example", "md_examples_gpio__r_e_a_d_m_e.html", [
+      [ "Overview", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "How to use example", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "Hardware Required", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md6", null ]
+      ] ]
+    ] ],
     [ "System Statistics Example", "md_examples_system_statistics__r_e_a_d_m_e.html", [
-      [ "Overview", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md4", null ],
-      [ "How to use example", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md5", [
-        [ "Project Structure", "index.html#autotoc_md27", null ],
-        [ "Goal Framework Modules", "index.html#autotoc_md28", [
-          [ "v1.0", "index.html#autotoc_md29", null ],
-          [ "Post v1.0", "index.html#autotoc_md30", null ]
-        ] ],
-        [ "Stretch Goals", "index.html#autotoc_md31", null ],
-        [ "Non Goals", "index.html#autotoc_md32", null ],
-        [ "This brings me to why I'm writing this article:", "md_article.html#autotoc_md1", null ],
-        [ "IoTReady ESP32 Framework", "md_article.html#autotoc_md2", null ],
-        [ "Hardware Required", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md6", null ]
+      [ "Overview", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "How to use example", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md9", [
+        [ "Hardware Required", "md_examples_system_statistics__r_e_a_d_m_e.html#autotoc_md10", null ]
       ] ]
     ] ],
     [ "WiFi Config Rest Example", "md_examples_wifi_config_rest__r_e_a_d_m_e.html", [
-      [ "Overview", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md8", null ],
-      [ "API Documentation", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md9", null ],
-      [ "How to use example", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md10", [
-        [ "Hardware Required", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md11", null ]
+      [ "Overview", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md12", null ],
+      [ "API Documentation", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md13", null ],
+      [ "How to use example", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md14", [
+        [ "Hardware Required", "md_examples_wifi_config_rest__r_e_a_d_m_e.html#autotoc_md15", null ]
       ] ]
     ] ],
     [ "WiFi SoftAP Example", "md_examples_wifi_softap__r_e_a_d_m_e.html", [
-      [ "Overview", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md13", null ],
-      [ "How to use example", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md14", [
-        [ "Hardware Required", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md15", null ]
+      [ "Overview", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md17", null ],
+      [ "How to use example", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md18", [
+        [ "Hardware Required", "md_examples_wifi_softap__r_e_a_d_m_e.html#autotoc_md19", null ]
       ] ]
     ] ],
     [ "WiFi Station Example", "md_examples_wifi_station__r_e_a_d_m_e.html", [
-      [ "Overview", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md17", null ],
-      [ "How to use example", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md18", [
-        [ "Hardware Required", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md19", null ]
+      [ "Overview", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md21", null ],
+      [ "How to use example", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md22", [
+        [ "Hardware Required", "md_examples_wifi_station__r_e_a_d_m_e.html#autotoc_md23", null ]
       ] ]
     ] ],
     [ "Clean, abstracted library for WiFi softAP control", "md_lib_wifi_softap__r_e_a_d_m_e.html", null ],
     [ "Clean, abstracted library for WiFi station control", "md_lib_wifi_station__r_e_a_d_m_e.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
   ] ]
@@ -81,7 +98,21 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"common_8c.html"
+"annotated.html",
+"gpio_2build_2bootloader_2config_2sdkconfig_8h.html#a44b9759c316277026b518d27400e745d",
+"gpio_2build_2config_2sdkconfig_8h.html#a5a2536a91a68b156236e2fbe5e13082c",
+"gpio_2build_2config_2sdkconfig_8h.html#afa6c1620473b2e4c48db79eca51d6dcb",
+"system__statistics_2build_2bootloader_2config_2sdkconfig_8h.html#aa0266124e405c117315e685f0c45381b",
+"system__statistics_2build_2config_2sdkconfig_8h.html#a77d5ad505e677022642d6fb8ee795e1a",
+"system__statistics_2main_2tasks_8h_source.html",
+"wifi__config__rest_2build_2config_2sdkconfig_8h.html#a124b65b2de2dc997090fe83628a39076",
+"wifi__config__rest_2build_2config_2sdkconfig_8h.html#aa7b3bf26fab282b149e7ce6f4d75a8c4",
+"wifi__softap_2build_2bootloader_2config_2sdkconfig_8h.html#a25ef8c44a0c2044056810a17c450eaaa",
+"wifi__softap_2build_2config_2sdkconfig_8h.html#a455f555af8f3959556d43357cd1e6e4f",
+"wifi__softap_2build_2config_2sdkconfig_8h.html#ae15493d2f5e221edb721129c2de6d2fb",
+"wifi__station_2build_2bootloader_2config_2sdkconfig_8h.html#aacf6fdd34127c6b3179dfe7f7316b5d8",
+"wifi__station_2build_2config_2sdkconfig_8h.html#a7d51324702fb61cfb6cf2d4fd5bbd0e9",
+"wifi__station__interface_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

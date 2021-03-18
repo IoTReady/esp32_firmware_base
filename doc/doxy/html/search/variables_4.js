@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['task1_5fhandle_119',['task1_handle',['../system__statistics_2main_2tasks_8c.html#adff6f1768b6b6501a1532675d5d04825',1,'tasks.c']]],
-  ['task2_5fhandle_120',['task2_handle',['../system__statistics_2main_2tasks_8c.html#a99743a1f37606ed2215e74664e1e3327',1,'tasks.c']]],
-  ['task3_5fhandle_121',['task3_handle',['../system__statistics_2main_2tasks_8c.html#aa7c07a9e2f1a1e69803a90e6764a0786',1,'tasks.c']]]
+  ['gpio_5finit_5fqueue_620',['gpio_init_queue',['../queues_8h.html#a9e7e061d71665e7b2fc84304fd2951a6',1,'queues.h']]],
+  ['gpio_5finput_5fqueue_621',['gpio_input_queue',['../queues_8h.html#aa6ab5021fe0d7bbfd65c87945a821135',1,'queues.h']]],
+  ['gpio_5fnum_622',['gpio_num',['../struct_g_p_i_o___output___event.html#a990700aa7b421a168247cf73760a4e74',1,'GPIO_Output_Event']]],
+  ['gpio_5foutput_5fqueue_623',['gpio_output_queue',['../queues_8h.html#a1f6a3335e3a9744f4f6a456bcbc794da',1,'queues.h']]]
 ];
