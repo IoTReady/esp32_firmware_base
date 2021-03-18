@@ -1,0 +1,15 @@
+menu "Example Configuration"
+
+    config BUTTON_GPIO
+        int "Button GPIO Number"
+        default 0
+        help
+            GPIO number for the button.
+
+    config LED_GPIO
+        int "LED GPIO Number"
+        default 2
+        help
+            GPIO number fot the LED.
+
+endmenu
