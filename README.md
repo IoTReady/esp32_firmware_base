@@ -8,7 +8,7 @@ I will not dig too deep into the features of ESP32 since there are only already 
 
 All I'm willing to say is, if you haven't already looked into the ESP32, YOU'RE MISSING OUT BIG TIME!
 
-The ESP-IDF is a great framework with constant development and active forum discussions. These together with nice documentation mean that ESP-IDF framework draws in hobbyists and professionals bees to a beautiful flower.
+The [ESP-IDF](https://github.com/espressif/esp-idf) is a great framework with constant development and active [forum](https://esp32.com/) discussions. These together with nice [documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/) mean that ESP-IDF framework draws in hobbyists and professionals bees to a beautiful flower.
 
 ## This brings me to why I'm writing this article:
 
