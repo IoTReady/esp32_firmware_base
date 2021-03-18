@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['wifi_5fsoftap_5finterface_2ec_89',['wifi_softap_interface.c',['../wifi__softap__interface_8c.html',1,'']]],
-  ['wifi_5fsoftap_5finterface_2eh_90',['wifi_softap_interface.h',['../wifi__softap__interface_8h.html',1,'']]],
-  ['wifi_5fstation_5finterface_2ec_91',['wifi_station_interface.c',['../wifi__station__interface_8c.html',1,'']]],
-  ['wifi_5fstation_5finterface_2eh_92',['wifi_station_interface.h',['../wifi__station__interface_8h.html',1,'']]]
+  ['readme_2emd_573',['README.md',['../examples_2gpio_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2system__statistics_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__config__rest_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]]
 ];
