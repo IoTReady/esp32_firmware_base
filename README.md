@@ -78,6 +78,23 @@ Remote device configuration is a very specific but common use-case that IoT enab
 - BLE/Bluetooth support
 - OTA support
 
+## Generating the Documentation
+
+This SDK comes with a convenient, browsable set of documentation. The documentation is available in HTML format in the ````doc/doxy/html```` directory of the repository.
+
+You can update this documentation by running the command ````doxygen Doxyfile```` in the base directory of the repository. You will need to have previously installed the [Doxygen](https://www.doxygen.nl/) package.
+
+## Feedback
+
+* [create issue on github](https://github.com/IoTReady/esp32_firmware_base/issues/new)
+
+* Click ★ <kbd> Star </kbd> on the top right corner of this page if this repo helps you
+
+
+
+## Participate in the development
+
+Fork -> Modify -> Submit PR
 
 ## References
 - [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/get-started/index.html)
