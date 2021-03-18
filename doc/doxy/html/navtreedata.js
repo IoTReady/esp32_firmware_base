@@ -46,6 +46,8 @@ var NAVTREE =
     [ "GPIO Example", "md_examples_gpio__r_e_a_d_m_e.html", [
       [ "Overview", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md4", null ],
       [ "How to use example", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md5", [
+        [ "This brings me to why I'm writing this article:", "md_article.html#autotoc_md1", null ],
+        [ "IoTReady ESP32 Framework", "md_article.html#autotoc_md2", null ],
         [ "Hardware Required", "md_examples_gpio__r_e_a_d_m_e.html#autotoc_md6", null ]
       ] ]
     ] ],
@@ -87,10 +89,10 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", "globals_defs" ]
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -99,20 +101,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"gpio_2build_2bootloader_2config_2sdkconfig_8h.html#a44b9759c316277026b518d27400e745d",
-"gpio_2build_2config_2sdkconfig_8h.html#a5a2536a91a68b156236e2fbe5e13082c",
-"gpio_2build_2config_2sdkconfig_8h.html#afa6c1620473b2e4c48db79eca51d6dcb",
-"system__statistics_2build_2bootloader_2config_2sdkconfig_8h.html#aa0266124e405c117315e685f0c45381b",
-"system__statistics_2build_2config_2sdkconfig_8h.html#a77d5ad505e677022642d6fb8ee795e1a",
-"system__statistics_2main_2tasks_8h_source.html",
-"wifi__config__rest_2build_2config_2sdkconfig_8h.html#a124b65b2de2dc997090fe83628a39076",
-"wifi__config__rest_2build_2config_2sdkconfig_8h.html#aa7b3bf26fab282b149e7ce6f4d75a8c4",
-"wifi__softap_2build_2bootloader_2config_2sdkconfig_8h.html#a25ef8c44a0c2044056810a17c450eaaa",
-"wifi__softap_2build_2config_2sdkconfig_8h.html#a455f555af8f3959556d43357cd1e6e4f",
-"wifi__softap_2build_2config_2sdkconfig_8h.html#ae15493d2f5e221edb721129c2de6d2fb",
-"wifi__station_2build_2bootloader_2config_2sdkconfig_8h.html#aacf6fdd34127c6b3179dfe7f7316b5d8",
-"wifi__station_2build_2config_2sdkconfig_8h.html#a7d51324702fb61cfb6cf2d4fd5bbd0e9",
-"wifi__station__interface_8h_source.html"
+"wifi__station__interface_8c.html#acd888d3f612ce3d4b38400b35ca4d0f0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

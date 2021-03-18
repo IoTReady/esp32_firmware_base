@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_573',['README.md',['../examples_2gpio_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2system__statistics_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__config__rest_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../examples_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__softap_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../lib_2wifi__station_2_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]]
+  ['tasks_2ec_116',['tasks.c',['../gpio_2main_2tasks_8c.html',1,'(Global Namespace)'],['../system__statistics_2main_2tasks_8c.html',1,'(Global Namespace)'],['../wifi__config__rest_2main_2tasks_8c.html',1,'(Global Namespace)'],['../wifi__softap_2main_2tasks_8c.html',1,'(Global Namespace)'],['../wifi__station_2main_2tasks_8c.html',1,'(Global Namespace)']]],
+  ['tasks_2eh_117',['tasks.h',['../gpio_2main_2tasks_8h.html',1,'(Global Namespace)'],['../system__statistics_2main_2tasks_8h.html',1,'(Global Namespace)'],['../wifi__config__rest_2main_2tasks_8h.html',1,'(Global Namespace)'],['../wifi__softap_2main_2tasks_8h.html',1,'(Global Namespace)'],['../wifi__station_2main_2tasks_8h.html',1,'(Global Namespace)']]]
 ];
