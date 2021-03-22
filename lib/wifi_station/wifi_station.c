@@ -53,6 +53,11 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     }
 }
 
+EventGroupHandle_t wifi_sta_get_event_group()
+{
+    return s_wifi_event_group;
+}
+
 esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
 {
     esp_err_t err;

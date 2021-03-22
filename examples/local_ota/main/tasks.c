@@ -6,7 +6,7 @@
 #include "tasks.h"
 #include "system_stats.h"
 #include "wifi_station.h"
-
+#include "local_ota.h"
 
 #define TAG "TASKS"
 
@@ -19,8 +19,11 @@
    If you'd rather not, just change the below entries to strings with
    the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
-#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
+#define EXAMPLE_ESP_WIFI_SSID       CONFIG_ESP_WIFI_SSID
+#define EXAMPLE_ESP_WIFI_PASS       CONFIG_ESP_WIFI_PASSWORD
+#define OTA_IP        CONFIG_OTA_IP
+#define OTA_PORT      CONFIG_OTA_PORT
+#define OTA_FILENAME  CONFIG_OTA_FILENAME
 
 
 TaskHandle_t *system_stats_task_handle, *station_task_handle = NULL;
@@ -33,10 +36,10 @@ void station_task(void *pvParameter) {
 
     // Initialize softAP
     wifi_init_station(EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
-    vTaskDelay(30000 / portTICK_PERIOD_MS);
+    // vTaskDelay(30000 / portTICK_PERIOD_MS);
 
     // De-Initialize softAP
-    wifi_deinit_station();
+    // wifi_deinit_station();
 
     // Delete task since it is a one-time operation
     vTaskDelete(NULL);
@@ -61,4 +64,5 @@ void initialize_tasks()
 {
     xTaskCreate(&system_stats_task, "system_stats_task", MEDIUM_STACK, NULL, LOW_PRIORITY, system_stats_task_handle);
     xTaskCreate(&station_task, "station_task", LARGE_STACK, NULL, LOW_PRIORITY, station_task_handle);
+    init_ota(&OTA_IP, &OTA_PORT, &OTA_FILENAME);
 }

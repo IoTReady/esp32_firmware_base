@@ -1,3 +1,3 @@
-idf_component_register(SRCS "wifi_softap_interface.c"
+idf_component_register(SRCS "wifi_softap.c"
                     INCLUDE_DIRS "include"
                     REQUIRES utilities)

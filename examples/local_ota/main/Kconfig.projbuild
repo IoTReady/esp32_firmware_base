@@ -1,0 +1,33 @@
+menu "Example Configuration"
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config OTA_IP
+        string "IP Address"
+        default "10.10.0.2"
+        help
+            IP Address of the device hosting the OTA firmware binary
+
+    config OTA_PORT
+        string "OTA Port"
+        default "8080"
+        help
+            Port of hosting of OTA firmware binary
+
+    config OTA_FILENAME
+        string "OTA File Name"
+        default "new-firmware.bin"
+        help
+            File name of the new OTA firmware binary to be downloaded (has to match the filename being hosted by the host)
+
+endmenu
