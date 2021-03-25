@@ -13,7 +13,7 @@
 #include "common.h"
 
 #define TAG "WIFI_CONF_BLE"
-#define DEFAULT_BLE_NAME "Config"
+#define DEFAULT_BLE_NAME "IoT-"
 
 #define NUM_SERVICES 1
 #define SYSTEM_SETTINGS_SERVICE 0
@@ -454,14 +454,13 @@ esp_err_t init_ble()
 esp_err_t enable_ble()
 {
     esp_err_t err;
-printf("AAAAA\n");
+
     err = esp_ble_gatts_register_callback(gatts_setup_handler);
     if (err)
     {
         ESP_LOGE(TAG, "Could not register lead gattss handler, error code = %x\n", err);
         return err;
     }
-printf("BBBBB\n");
 
     err = setup_lead_advertising();
     if (err)
@@ -469,7 +468,6 @@ printf("BBBBB\n");
         ESP_LOGE(TAG, "Could not set up lead advertising parameters, error code = %x\n", err);
         return err;
     }
-printf("CCCCC\n");
 
     err = esp_ble_gap_register_callback(gap_setup_handler);
     if (err)
@@ -477,14 +475,12 @@ printf("CCCCC\n");
         ESP_LOGE(TAG, "Could not register lead gap handler, error code = %x\n", err);
         return err;
     }
-printf("DDDDD\n");
 
     err = esp_ble_gatts_app_register(SYSTEM_SETTINGS_SERVICE);
     if (err)
     {
         ESP_LOGE(TAG, "Could not register System Settings Service, error code = %x\n", err);
     }
-printf("EEEEE\n");
 
     esp_err_t local_mtu_ret = esp_ble_gatt_set_local_mtu(512);
     if (local_mtu_ret)
