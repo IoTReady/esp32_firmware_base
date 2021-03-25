@@ -12,6 +12,8 @@
 
 #define TOTAL_GPIO 50
 
+// wifi_sta_init_struct_t wifi_params_sta;
+
 /**
  * @brief  Get MAC address of the device
  * 

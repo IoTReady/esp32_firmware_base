@@ -15,4 +15,4 @@ For example, the wifi_init_softap() handles the following:
 - Sets operating mode and configuration
 - Starts WiFi with the above configuration
 
-For more insights, view API specific code documentation [here!](./include/wifi_softap_interface.h)
+For more insights, view API specific code documentation [here!](./include/wifi_softap.h)

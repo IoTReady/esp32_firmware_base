@@ -8,10 +8,10 @@
 #include "esp_log.h"
 #include "nvs_flash.h"
 #include "utilities.h"
-
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
+#include "wifi_station.h"
 
 #define TAG "WIFI_STATION_INTERFACE"
 
@@ -25,6 +25,11 @@ static EventGroupHandle_t s_wifi_event_group;
  * - we failed to connect after the maximum amount of retries */
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
+
+wifi_sta_init_struct_t wifi_params_sta = {
+    .network_ssid = DEFAULT_WIFI_SSID,
+    .network_password = DEFAULT_WIFI_PASSWORD
+};
 
 static int s_retry_num = 0;
 
@@ -51,6 +56,11 @@ static void event_handler(void* arg, esp_event_base_t event_base,
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
     }
+}
+
+EventGroupHandle_t wifi_sta_get_event_group()
+{
+    return s_wifi_event_group;
 }
 
 esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)

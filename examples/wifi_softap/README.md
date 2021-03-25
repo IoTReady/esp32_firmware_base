@@ -1,10 +1,10 @@
 # WiFi SoftAP Example
 ## Overview
 
-This example introduces how to use our [wifi_softap_interface](../../lib/wifi_softap_interface) library to start a WiFi softap for 30 seconds and stop it.
+This example introduces how to use our [wifi_softap](../../lib/wifi_softap) library to start a WiFi softap for 30 seconds and stop it.
 
 The library used in this example are:
-- [wifi_softap_interface](../../lib/wifi_softap_interface)
+- [wifi_softap](../../lib/wifi_softap)
 
 ## How to use example
 - Build and flash the example normally as any other ESP-IDF project. No special configuration is required during this process.
