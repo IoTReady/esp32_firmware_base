@@ -11,6 +11,7 @@
 
 #include "wifi_station.h"
 #include "common.h"
+#include "utilities.h"
 
 #define TAG "WIFI_CONF_BLE"
 #define DEFAULT_BLE_NAME "IoT-"
@@ -39,6 +40,7 @@ static void system_settings_gatts_handler(esp_gatts_cb_event_t event, esp_gatt_i
 esp_err_t enable_ble();
 esp_err_t disable_ble();
 esp_err_t setup_lead_advertising();
+esp_err_t deinit_ble();
 
 esp_gatt_char_prop_t SYSTEM_SETTINGS_SERVICE_PROPERTY = 0;
 esp_gatt_if_t current_gatts_if;
@@ -294,6 +296,8 @@ static void system_settings_gatts_handler(esp_gatts_cb_event_t event, esp_gatt_i
             else if (writeHandle == gatts_profile_array[SYSTEM_SETTINGS_SERVICE].chars[CONNECT_WIFI_ID].char_handle) 
             {
                 wifi_init_station(wifi_params_sta.network_ssid, wifi_params_sta.network_password);
+                disable_ble();
+                deinit_ble();
             }
         }
         else
@@ -491,6 +495,48 @@ esp_err_t enable_ble()
     return err;
 }
 
+esp_err_t deinit_ble()
+{
+    esp_err_t err;
+
+    err = esp_bluedroid_disable();
+    if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not disable bluedroid");
+        error_print_and_return(TAG, err);
+        return err;
+    }
+    err = esp_bluedroid_deinit();
+        if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not deinit bluedroid");
+        error_print_and_return(TAG, err);
+        return err;
+    }
+    err = esp_bt_controller_disable();
+    if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not disable bt controller");
+        error_print_and_return(TAG, err);
+        return err;
+    }
+    err = esp_bt_controller_deinit();
+        if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not deinit bt controller");
+        error_print_and_return(TAG, err);
+        return err;
+    }
+    err = esp_bt_mem_release(ESP_BT_MODE_BLE);
+        if (err != ESP_OK)
+    {
+        ESP_LOGE(TAG, "Could not release BT memory");
+        error_print_and_return(TAG, err);
+        return err;
+    }
+    return err;
+}
+
 esp_err_t disable_ble()
 {
     esp_err_t err;
@@ -498,7 +544,7 @@ esp_err_t disable_ble()
     err = esp_ble_gatts_app_unregister(current_gatts_if);
     if (err != ESP_OK)
     {
-        ESP_LOGE(TAG, "Could not shut down lead mode, error code = %x\n", err);
+        ESP_LOGE(TAG, "Could not disable BLE, error code = %x\n", err);
     }
     return err;
 }

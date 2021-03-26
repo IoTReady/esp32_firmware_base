@@ -10,7 +10,6 @@
 
 #define TAG "TASKS"
 
-
 #define REPORT_DELAY 20000
 #define STATS_TICKS pdMS_TO_TICKS(1000)
 
@@ -22,24 +21,7 @@
 #define EXAMPLE_ESP_WIFI_SSID       CONFIG_ESP_WIFI_SSID
 #define EXAMPLE_ESP_WIFI_PASS       CONFIG_ESP_WIFI_PASSWORD
 
-TaskHandle_t *system_stats_task_handle, *station_task_handle = NULL;
-
-void station_task(void *pvParameter);
-void system_stats_task(void *pvParameter);
-
-
-void station_task(void *pvParameter) {
-
-    // Initialize softAP
-    wifi_init_station(EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
-    // vTaskDelay(30000 / portTICK_PERIOD_MS);
-
-    // De-Initialize softAP
-    // wifi_deinit_station();
-
-    // Delete task since it is a one-time operation
-    vTaskDelete(NULL);
-}
+TaskHandle_t *system_stats_task_handle = NULL;
 
 void system_stats_task(void *pvParameter)
 {
@@ -61,7 +43,6 @@ void system_stats_task(void *pvParameter)
 void initialize_tasks()
 {
     xTaskCreate(&system_stats_task, "system_stats_task", MEDIUM_STACK, NULL, LOW_PRIORITY, system_stats_task_handle);
-    // xTaskCreate(&station_task, "station_task", LARGE_STACK, NULL, LOW_PRIORITY, station_task_handle);
     init_ble();
     enable_ble();
 }

@@ -40,5 +40,17 @@ esp_err_t enable_ble();
  */
 esp_err_t disable_ble();
 
+/**
+ * @brief  Deinitialize BLE
+ * 
+ * Disable and de-initialize bluedroid and BT controller, release memory allocations
+ * 
+ * 
+ * @return
+ *    - ESP_OK: Success
+ *    - Other : Failed
+ * 
+ */
+esp_err_t deinit_ble();
 
 #endif // __WIFI_CONFIG_BLE_H__
