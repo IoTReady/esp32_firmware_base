@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['softap_5ftask_137',['softap_task',['../wifi__config__rest_2main_2tasks_8c.html#a60329b4b9cfaedc706d20f05c25d078a',1,'softap_task(void *pvParameter):&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a60329b4b9cfaedc706d20f05c25d078a',1,'softap_task(void *pvParameter):&#160;tasks.c']]],
-  ['station_5ftask_138',['station_task',['../wifi__station_2main_2tasks_8c.html#a50ad5938ddacbd666d58b32fa8eb7902',1,'tasks.c']]],
-  ['system_5fget_5ffree_5fheap_139',['system_get_free_heap',['../system__statistics_2main_2tasks_8h.html#af0bdc5b088ee77bb43e90ee7b3c2bce0',1,'system_get_free_heap():&#160;system_stats.c'],['../system__stats_8h.html#af0bdc5b088ee77bb43e90ee7b3c2bce0',1,'system_get_free_heap():&#160;system_stats.c'],['../system__stats_8c.html#af0bdc5b088ee77bb43e90ee7b3c2bce0',1,'system_get_free_heap():&#160;system_stats.c']]],
-  ['system_5fprint_5freal_5ftime_5fstats_140',['system_print_real_time_stats',['../system__stats_8h.html#a56d20231cee472c95d416544b7037ced',1,'system_print_real_time_stats(TickType_t xTicksToWait):&#160;system_stats.c'],['../system__stats_8c.html#a56d20231cee472c95d416544b7037ced',1,'system_print_real_time_stats(TickType_t xTicksToWait):&#160;system_stats.c']]],
-  ['system_5fprint_5fruntime_5fstats_141',['system_print_runtime_stats',['../system__stats_8h.html#a860a227aef02d72acf742a5c4f5c8e8e',1,'system_print_runtime_stats(char *pcWriteBuffer):&#160;system_stats.c'],['../system__stats_8c.html#a860a227aef02d72acf742a5c4f5c8e8e',1,'system_print_runtime_stats(char *pcWriteBuffer):&#160;system_stats.c']]],
-  ['system_5fstats_5ftask_142',['system_stats_task',['../system__statistics_2main_2tasks_8c.html#a52e70b3db1fa4e48299b4b3daae9097c',1,'system_stats_task(void *pvParameter):&#160;tasks.c'],['../wifi__softap_2main_2tasks_8c.html#a52e70b3db1fa4e48299b4b3daae9097c',1,'system_stats_task(void *pvParameter):&#160;tasks.c'],['../wifi__station_2main_2tasks_8c.html#a52e70b3db1fa4e48299b4b3daae9097c',1,'system_stats_task(void *pvParameter):&#160;tasks.c']]]
+  ['led_5ftask_773',['led_task',['../gpio_2main_2tasks_8c.html#a3ab38a51da5a7432511cd4570a01d563',1,'tasks.c']]]
 ];

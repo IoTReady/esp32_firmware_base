@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['ip_161',['ip',['../wifi__softap__interface_8c.html#a4745c703dd9196f777776545059444f2',1,'ip():&#160;wifi_softap_interface.c'],['../wifi__station__interface_8c.html#a4745c703dd9196f777776545059444f2',1,'ip():&#160;wifi_station_interface.c']]]
+  ['gatts_5fcb_807',['gatts_cb',['../structgatts__service__inst.html#a4832c725c456902575f9a76a860f07ef',1,'gatts_service_inst']]],
+  ['gatts_5fif_808',['gatts_if',['../structgatts__service__inst.html#a929b78e491081eeb0978429cbb4ed7c5',1,'gatts_service_inst']]],
+  ['gpio_5finit_5fqueue_809',['gpio_init_queue',['../queues_8h.html#a9e7e061d71665e7b2fc84304fd2951a6',1,'queues.h']]],
+  ['gpio_5finput_5fqueue_810',['gpio_input_queue',['../queues_8h.html#aa6ab5021fe0d7bbfd65c87945a821135',1,'queues.h']]],
+  ['gpio_5fnum_811',['gpio_num',['../struct_g_p_i_o___output___event.html#a990700aa7b421a168247cf73760a4e74',1,'GPIO_Output_Event']]],
+  ['gpio_5foutput_5fqueue_812',['gpio_output_queue',['../queues_8h.html#a1f6a3335e3a9744f4f6a456bcbc794da',1,'queues.h']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['error_5fprint_5fand_5freturn_126',['error_print_and_return',['../utilities_8h.html#a553970ad57a0e79e4484387bf8f1d49f',1,'error_print_and_return(char *TAG, esp_err_t error_code):&#160;utilities.c'],['../utilities_8c.html#a553970ad57a0e79e4484387bf8f1d49f',1,'error_print_and_return(char *TAG, esp_err_t error_code):&#160;utilities.c']]]
+  ['deinit_5fble_759',['deinit_ble',['../wifi__config__ble_8h.html#a8dd881b7f6a5a849ee44e3c70f404cbe',1,'deinit_ble():&#160;wifi_config_ble.c'],['../wifi__config__ble_8c.html#a8dd881b7f6a5a849ee44e3c70f404cbe',1,'deinit_ble():&#160;wifi_config_ble.c']]],
+  ['disable_5fble_760',['disable_ble',['../wifi__config__ble_8h.html#a07b72e8c6c9274e6bb8cfed9f9ea39f7',1,'disable_ble():&#160;wifi_config_ble.c'],['../wifi__config__ble_8c.html#a07b72e8c6c9274e6bb8cfed9f9ea39f7',1,'disable_ble():&#160;wifi_config_ble.c']]]
 ];
