@@ -1,10 +1,10 @@
 # WiFi Station Example
 ## Overview
 
-This example introduces how to use our [wifi_station_interface](../../lib/wifi_station_interface) library to connect to the configured WiFi network for 5 tries.
+This example introduces how to use our [wifi_station](../../lib/wifi_station) library to connect to the configured WiFi network for 5 tries.
 
 The library used in this example are:
-- [wifi_station_interface](../../lib/wifi_station_interface)
+- [wifi_station](../../lib/wifi_station)
 
 ## How to use example
 - Run `idf.py menuconfig` to open the project configuration menu. Navigate project-specific "Example Configuration" and set the WiFi SSID and password for the AP you want the station to connect to.
