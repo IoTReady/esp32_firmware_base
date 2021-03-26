@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wifi_5fconfig_171',['wifi_config',['../wifi__softap__interface_8c.html#a11201774aaac749961f9bb6dabeac94f',1,'wifi_softap_interface.c']]]
+  ['perm_822',['perm',['../structgatts__characteristic__inst.html#a8a0e1f2c30dcf68c1cb05c2c82e58ce4',1,'gatts_characteristic_inst']]],
+  ['property_823',['property',['../structgatts__characteristic__inst.html#ac30953a28dff336cc69d88e3839a25f3',1,'gatts_characteristic_inst']]]
 ];
