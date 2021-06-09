@@ -3,6 +3,7 @@
 #include "esp_system.h"
 #include "esp_log.h"
 #include "system_stats.h"
+#include "common.h"
 
 #include <string.h>
 
@@ -10,11 +11,49 @@
 
 #define ARRAY_SIZE_OFFSET   5   //Increase this if system_print_real_time_stats returns ESP_ERR_INVALID_SIZE
 
+
 uint32_t system_get_free_heap()
 {
     return esp_get_free_heap_size();
 }
 
+uint8_t system_get_number_tasks_running()
+{
+    return uxTaskGetNumberOfTasks();
+}
+
+system_status_t system_get_system_state()
+{
+    system_status_t system_stats;
+    system_stats.device_id = get_device_id();
+
+    TaskStatus_t *array = NULL;
+    uint8_t array_size;
+    uint32_t run_time;
+
+    //Allocate array to store current task states
+    array_size = system_get_number_tasks_running() + ARRAY_SIZE_OFFSET;
+    array = malloc(sizeof(TaskStatus_t) * array_size);
+    if (array == NULL) {
+        ESP_LOGE(TAG, "ESP_ERR_NO_MEM");
+        free(array);
+        return;
+    }
+
+    //Get current task states
+    array_size = uxTaskGetSystemState(array, array_size, &run_time);
+    if (array_size == 0) {
+        ESP_LOGE(TAG, "ESP_ERR_INVALID_SIZE");
+        free(array);
+        return;
+    }
+
+    // return array;
+    system_stats.task_status = array;
+    system_stats.heap_free = system_get_free_heap();
+
+    return system_stats;
+}
 
 void system_print_runtime_stats( char *pcWriteBuffer )
 {

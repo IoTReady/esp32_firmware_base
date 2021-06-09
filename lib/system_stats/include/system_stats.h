@@ -1,6 +1,11 @@
 #ifndef __SYSTEM_STATS_H__
 #define __SYSTEM_STATS_H__ 1
 
+typedef struct system_status {
+    char *device_id;
+    TaskStatus_t* task_status;
+    int heap_free;
+}system_status_t;
 
 /**
  * @brief   Function to get free heap size.
@@ -10,6 +15,7 @@
  */
 uint32_t system_get_free_heap();
 
+system_status_t system_get_system_state();
 
 /**
  * @brief   Function to print the current CPU usage of tasks.
