@@ -18,7 +18,7 @@
 #define CONFIG_ESP_MAXIMUM_RETRY    5
 
 /* FreeRTOS event group to signal when we are connected*/
-static EventGroupHandle_t s_wifi_event_group;
+EventGroupHandle_t s_wifi_event_group;
 
 /* The event group allows multiple bits for each event, but we only care about two events:
  * - we are connected to the AP with an IP
@@ -156,29 +156,28 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (bits & WIFI_CONNECTED_BIT) {
         ESP_LOGI(TAG, "Connected to AP SSID:%s password:%s",
                  wifi_ssid, wifi_password);
+        esp_netif_get_ip_info(ap_netif, &ip);
+        ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
+        return err;
     } else if (bits & WIFI_FAIL_BIT) {
         ESP_LOGE(TAG, "Failed to connect to SSID:%s, password:%s",
                  wifi_ssid, wifi_password);
+        err = esp_event_handler_unregister(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler);
+        if (err  != ESP_OK){
+            return error_print_and_return(TAG, err);
+        }
+
+        err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler);
+        if (err  != ESP_OK){
+            return error_print_and_return(TAG, err);
+        }
+
+        vEventGroupDelete(s_wifi_event_group);
+        return -1;
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
+        return -1;
     }
-
-    err = esp_event_handler_unregister(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler);
-    if (err  != ESP_OK){
-        return error_print_and_return(TAG, err);
-    }
-
-    err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler);
-    if (err  != ESP_OK){
-        return error_print_and_return(TAG, err);
-    }
-
-    vEventGroupDelete(s_wifi_event_group);
-
-    esp_netif_get_ip_info(ap_netif, &ip);
-    ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
-    
-    return err;
 }
 
 esp_err_t wifi_deinit_station()
