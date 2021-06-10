@@ -1,0 +1,8 @@
+build/
+.vscode/
+sdkconfig
+sdkconfig.old
+aws_credentials/*
+spiffs_image/certificate.pem.crt
+spiffs_image/private.pem.key
+mac_address.txt

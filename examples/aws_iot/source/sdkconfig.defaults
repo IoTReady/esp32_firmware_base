@@ -1,0 +1,7 @@
+# Enable custom partition table
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_FILENAME="partitions.csv"
+
+# Include AWS_IOT_SDK
+CONFIG_AWS_IOT_SDK=y
