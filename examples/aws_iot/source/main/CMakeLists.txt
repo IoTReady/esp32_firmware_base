@@ -1,7 +1,7 @@
 idf_component_register(SRCS "main.c"
                     "tasks.c"
                     INCLUDE_DIRS "."
-                    REQUIRES "common" "wifi_prov" "aws_control" "wifi_station")
+                    REQUIRES "common" "aws_control" "wifi_station")
 
 # Create a SPIFFS image from the contents of the 'spiffs_image' directory
 # that fits the partition named 'storage'. FLASH_IN_PROJECT indicates that

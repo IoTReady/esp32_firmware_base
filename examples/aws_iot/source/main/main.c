@@ -1,9 +1,20 @@
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "tasks.h"
-#include "wifi_prov.h"
 #include "esp_log.h"
+#include "esp_system.h"
 #include "nvs_flash.h"
+#include "wifi_station.h"
 
 #define TAG "main"
+
+/* The examples use WiFi configuration that you can set via project configuration menu
+
+   If you'd rather not, just change the below entries to strings with
+   the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
+*/
+#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
+#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
 
 /**
  * Main entry point of the program.
