@@ -41,6 +41,19 @@ git stash
 git pull
 ````
 
+## SSL verification
+For client authentication, AWS IoT uses X.509 certificates and private key. Client certificates must be registered with AWS IoT before a client can communicate with AWS IoT. AWS recommends that each device or client be given a unique certificate to enable fine-grained client management actions, including certificate revocation. For more visit [here](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html).
+
+## Need for Simplicity
+
+Here's the steps needed to prepare a device to be able to connect to AWS IoT servers:
+1. Create a unique 'thing' on the AWS IoT server
+2. Create a unique set of [certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) for the thing just created.
+3. Create a AWS IoT Core [policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) to control access to the AWS IoT Core server.
+4. Attach the policy to the certificate used for the thing.
+5. Upload these certificates into the device so that it can access them to authenticate the connection from the device to the AWS IoT server.
+
+As you must have realized, this can be a tedious and time-consuming task, hence inefficient for preparing large number of devices. We wanted to create a tool that automates this process to make it a layman's task to prepare as many devices as possible in the shortest time possible while maintaining simplicity and configurability. The 'Prepare Script' takes care of all 5 steps mentioned above.
 
 
 ## The [Prepare Script](https://github.com/IoTReady/prepare_script_awsiot)
@@ -54,4 +67,5 @@ The prepare script is a tool that automates the creating and flashing of devices
 6. Copy/embed the downloaded certificate and keys files into the necessary folder.
 
 ![prepare_script_flow](/doc/assets/prepare_script_flow.png)
+
 
