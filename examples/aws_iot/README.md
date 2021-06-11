@@ -10,7 +10,7 @@ The prepare script is a tool that automates the creating and flashing of devices
 5. Create a new thing with the MAC address obtained in step1 as thing name.
 6. Copy/embed the downloaded certificate and keys files into the necessary folder.
 
-![prepare_flow](/asset/prepare_flow.png)
+![prepare_script_flow](/doc/assets/prepare_script_flow.png)
 
 ### How to use prepare.sh:
 - You will need AWS configured in your device in order to automatically access your AWS and do the various steps above. If you haven't already:
