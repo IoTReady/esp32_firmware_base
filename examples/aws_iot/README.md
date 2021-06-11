@@ -68,4 +68,6 @@ The prepare script is a tool that automates the creating and flashing of devices
 
 ![prepare_script_flow](/doc/assets/prepare_script_flow.png)
 
+## SPIFFS Handling
 
+Along with the AWS IoT perks, this example also handles the SPIFFS integration. The unique certificates that are downloaded for each device are stored into a directory, which is then created into an image and stored into the SPIFFS partition space in the ESP32 (using the [spiffsgen.py](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/storage/spiffs.html#spiffsgen-py) tool). The code then has provisions to read these files and use them for SSL verification and authentication.
