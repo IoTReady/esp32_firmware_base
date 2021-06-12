@@ -10,6 +10,13 @@ git pull
 
 echo -e 'Preparing new device\n'
 
+# -p so there's no error if dir exists
+mkdir -p aws_credentials
+
+# Edit this to the path to esp-idf on your system
+# This brings idf.py into your path
+source ~/code/esp/esp-idf/export.sh
+
 python3 ./registerDevice.py
 
 idf.py -C source build flash
