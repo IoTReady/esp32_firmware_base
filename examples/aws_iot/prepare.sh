@@ -21,7 +21,7 @@ python3 registerDevice.py
 
 # Edit this to the path to esp-idf on your system
 # This brings idf.py into your path
-source ~/code/esp/esp-idf/export.sh
+source ~/esp/esp-idf/export.sh
 
 idf.py -C source build flash
 

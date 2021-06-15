@@ -1,4 +1,5 @@
 ## Running the example:
+
 - You will need AWS configured in your device in order to automatically access your AWS and do the various steps above. If you haven't already:
     - Install the python AWS CLI on your machine
     ````
@@ -16,9 +17,19 @@
     > For more details on AWS access keys :https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys<br>
     For more details on AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
 
-- You will need esptool and boto3 installed. Just run:
+- Create a python3 virtual environment and make sure it has pip ugraded.
 ````
-$ pip3 install -r requirements.txt
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ python -m pip install -U pip
+````
+- You will need esptool installed. Just run:
+````
+$ pip install -r requirements.txt
+````
+- To ensure correct setup of ESP-IDF environment variables, make sure line 24 in prepare.sh points to your local ESP-IDF directory path. By default, it should be:
+````
+source ~/esp/esp-idf/export.sh
 ````
 - Make sure you have configured the AWS variables in [registerDevice.py](./registerDevice.py#L19)
 - Put your code project into a directory named `source`. This can be changed in the script.
