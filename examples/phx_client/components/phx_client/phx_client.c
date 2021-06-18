@@ -73,7 +73,7 @@ void phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token)
 void phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pub_json)
 {
     cJSON *root = cJSON_CreateObject();
-    cJSON_AddStringToObject(root, "event", "phx_join");
+    cJSON_AddStringToObject(root, "event", "new_msg");
     cJSON_AddStringToObject(root, "topic", topic);
     cJSON_AddNumberToObject(root, "ref", 0);
     cJSON_AddItemToObject(root, "payload", pub_json);
