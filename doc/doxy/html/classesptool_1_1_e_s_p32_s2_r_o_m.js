@@ -1,0 +1,28 @@
+var classesptool_1_1_e_s_p32_s2_r_o_m =
+[
+    [ "get_chip_description", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a761ac7af4edb72598b5ed0304ebfe8b0", null ],
+    [ "get_chip_description", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a761ac7af4edb72598b5ed0304ebfe8b0", null ],
+    [ "get_chip_features", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a35eb981ef674dbf7389787edc33de416", null ],
+    [ "get_chip_features", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a35eb981ef674dbf7389787edc33de416", null ],
+    [ "get_crystal_freq", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a18dc687d202be15fe4539b29e2107844", null ],
+    [ "get_crystal_freq", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a18dc687d202be15fe4539b29e2107844", null ],
+    [ "get_flash_crypt_config", "classesptool_1_1_e_s_p32_s2_r_o_m.html#aa223851f74248214ef9cf149c8a5f557", null ],
+    [ "get_flash_crypt_config", "classesptool_1_1_e_s_p32_s2_r_o_m.html#aa223851f74248214ef9cf149c8a5f557", null ],
+    [ "get_key_block_purpose", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a6de3ba632d21076afdfb6ac0ddd52b65", null ],
+    [ "get_key_block_purpose", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a6de3ba632d21076afdfb6ac0ddd52b65", null ],
+    [ "get_pkg_version", "classesptool_1_1_e_s_p32_s2_r_o_m.html#ae21ad395dc4e6616031c160e632277c5", null ],
+    [ "get_pkg_version", "classesptool_1_1_e_s_p32_s2_r_o_m.html#ae21ad395dc4e6616031c160e632277c5", null ],
+    [ "hard_reset", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a0b5bfa6223f904098edca98522b918a2", null ],
+    [ "hard_reset", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a0b5bfa6223f904098edca98522b918a2", null ],
+    [ "is_flash_encryption_key_valid", "classesptool_1_1_e_s_p32_s2_r_o_m.html#ab8a1829460fe5c9b71da695b8988de86", null ],
+    [ "is_flash_encryption_key_valid", "classesptool_1_1_e_s_p32_s2_r_o_m.html#ab8a1829460fe5c9b71da695b8988de86", null ],
+    [ "override_vddsdio", "classesptool_1_1_e_s_p32_s2_r_o_m.html#af69d4808e4ef14dbb21da976060841b9", null ],
+    [ "override_vddsdio", "classesptool_1_1_e_s_p32_s2_r_o_m.html#af69d4808e4ef14dbb21da976060841b9", null ],
+    [ "read_mac", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a1ac1696c9d3bc874e848d5af963d5652", null ],
+    [ "read_mac", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a1ac1696c9d3bc874e848d5af963d5652", null ],
+    [ "uses_usb", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a6b9533ed4000c1750648e1753e2d148f", null ],
+    [ "uses_usb", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a6b9533ed4000c1750648e1753e2d148f", null ],
+    [ "ESP_RAM_BLOCK", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a39ae805cd754ede99593dec03873ad6d", null ],
+    [ "GPIO_STRAP_SPI_BOOT_MASK", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a7f3bbc98937b0ed7704f8af5f930a48a", null ],
+    [ "RTC_CNTL_FORCE_DOWNLOAD_BOOT_MASK", "classesptool_1_1_e_s_p32_s2_r_o_m.html#a53ed90de050fab33275b7fd7e9e43a01", null ]
+];

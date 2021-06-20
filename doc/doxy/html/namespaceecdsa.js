@@ -1,0 +1,65 @@
+var namespaceecdsa =
+[
+    [ "_compat", "namespaceecdsa_1_1__compat.html", [
+      [ "hmac_compat", "namespaceecdsa_1_1__compat.html#a2368de3869248076f69e96efd4f3c194", null ],
+      [ "normalise_bytes", "namespaceecdsa_1_1__compat.html#a8891c69ad9817ef8000d35a3d46d45a1", null ],
+      [ "remove_whitespace", "namespaceecdsa_1_1__compat.html#afd5a57f7173fd15389ae471f51ae07bd", null ],
+      [ "str_idx_as_int", "namespaceecdsa_1_1__compat.html#acfd81fde026db7110e26442419f27963", null ]
+    ] ],
+    [ "_rwlock", "namespaceecdsa_1_1__rwlock.html", "namespaceecdsa_1_1__rwlock" ],
+    [ "_version", "namespaceecdsa_1_1__version.html", [
+      [ "get_versions", "namespaceecdsa_1_1__version.html#af0f443ad5c03e31f874ce2f1addb74ed", null ],
+      [ "version_json", "namespaceecdsa_1_1__version.html#ae2a81dcb8fd8d4ed18e5b79e4af68246", null ]
+    ] ],
+    [ "curves", "namespaceecdsa_1_1curves.html", "namespaceecdsa_1_1curves" ],
+    [ "der", "namespaceecdsa_1_1der.html", "namespaceecdsa_1_1der" ],
+    [ "ecdh", "namespaceecdsa_1_1ecdh.html", "namespaceecdsa_1_1ecdh" ],
+    [ "ecdsa", "namespaceecdsa_1_1ecdsa.html", "namespaceecdsa_1_1ecdsa" ],
+    [ "ellipticcurve", "namespaceecdsa_1_1ellipticcurve.html", "namespaceecdsa_1_1ellipticcurve" ],
+    [ "errors", "namespaceecdsa_1_1errors.html", "namespaceecdsa_1_1errors" ],
+    [ "keys", "namespaceecdsa_1_1keys.html", "namespaceecdsa_1_1keys" ],
+    [ "numbertheory", "namespaceecdsa_1_1numbertheory.html", "namespaceecdsa_1_1numbertheory" ],
+    [ "rfc6979", "namespaceecdsa_1_1rfc6979.html", [
+      [ "bits2int", "namespaceecdsa_1_1rfc6979.html#abf39de1c87915438e7380e3be6bbee91", null ],
+      [ "bits2octets", "namespaceecdsa_1_1rfc6979.html#a61def74b8a5d43c25e342a70ee2af34d", null ],
+      [ "generate_k", "namespaceecdsa_1_1rfc6979.html#a71e631ab3609ab5708fd7be41a9d650c", null ]
+    ] ],
+    [ "test_curves", "namespaceecdsa_1_1test__curves.html", "namespaceecdsa_1_1test__curves" ],
+    [ "test_der", "namespaceecdsa_1_1test__der.html", "namespaceecdsa_1_1test__der" ],
+    [ "test_ecdh", "namespaceecdsa_1_1test__ecdh.html", "namespaceecdsa_1_1test__ecdh" ],
+    [ "test_ecdsa", "namespaceecdsa_1_1test__ecdsa.html", "namespaceecdsa_1_1test__ecdsa" ],
+    [ "test_ellipticcurve", "namespaceecdsa_1_1test__ellipticcurve.html", "namespaceecdsa_1_1test__ellipticcurve" ],
+    [ "test_jacobi", "namespaceecdsa_1_1test__jacobi.html", "namespaceecdsa_1_1test__jacobi" ],
+    [ "test_keys", "namespaceecdsa_1_1test__keys.html", "namespaceecdsa_1_1test__keys" ],
+    [ "test_malformed_sigs", "namespaceecdsa_1_1test__malformed__sigs.html", [
+      [ "st_der", "namespaceecdsa_1_1test__malformed__sigs.html#aae125d6628c7318c620f34a1df7e3ca7", null ],
+      [ "st_der_bit_string", "namespaceecdsa_1_1test__malformed__sigs.html#a639f3ff80c590b190168399ecffb695c", null ],
+      [ "st_der_integer", "namespaceecdsa_1_1test__malformed__sigs.html#acc5d7c27a6ede99e81909b35ade3b452", null ],
+      [ "st_der_null", "namespaceecdsa_1_1test__malformed__sigs.html#afeaf8d0a1067d1e66b58e17d7481e07d", null ],
+      [ "st_der_octet_string", "namespaceecdsa_1_1test__malformed__sigs.html#a6769668aa8cc4916e1e425a230860072", null ],
+      [ "st_der_oid", "namespaceecdsa_1_1test__malformed__sigs.html#a31c2eea17f64287192b1a1de018463e4", null ],
+      [ "st_fuzzed_sig", "namespaceecdsa_1_1test__malformed__sigs.html#a18b2d7d1b6714dceb9948dd2fd60e8a4", null ],
+      [ "st_random_der_ecdsa_sig_value", "namespaceecdsa_1_1test__malformed__sigs.html#a9f5c97779443a2c421171c77ba9149da", null ],
+      [ "test_fuzzed_der_signatures", "namespaceecdsa_1_1test__malformed__sigs.html#a7e9aada1406d8a44dacc3018a0ac5b36", null ],
+      [ "test_fuzzed_string_signatures", "namespaceecdsa_1_1test__malformed__sigs.html#a103d00340f2fbec5dd4b646aa3a75818", null ],
+      [ "test_random_bytes_as_signature", "namespaceecdsa_1_1test__malformed__sigs.html#a218f72dd880f2ea4c04febc145d71a8d", null ],
+      [ "test_random_der_as_signature", "namespaceecdsa_1_1test__malformed__sigs.html#a045d08fec7e84a8e3e74fadaafae8b28", null ],
+      [ "test_random_der_ecdsa_sig_value", "namespaceecdsa_1_1test__malformed__sigs.html#a8afc727698ce34ef927f508f23af3d51", null ],
+      [ "test_signatures", "namespaceecdsa_1_1test__malformed__sigs.html#a1fc228a305cee49dba307bec11562fa0", null ],
+      [ "algorithms_available", "namespaceecdsa_1_1test__malformed__sigs.html#a73a0d41ff53d9714effd680851c8da06", null ],
+      [ "curves", "namespaceecdsa_1_1test__malformed__sigs.html#ac6b561969b086126766bfc5ca45b54e4", null ],
+      [ "example_data", "namespaceecdsa_1_1test__malformed__sigs.html#a541d3e4c2056e5b4a78483db384920fd", null ],
+      [ "hash_and_size", "namespaceecdsa_1_1test__malformed__sigs.html#a7cfc6356ba79f648e40769ab0926af8d", null ],
+      [ "key", "namespaceecdsa_1_1test__malformed__sigs.html#a04c5bbb88344c5c3ba669e7c45ac40a3", null ],
+      [ "keys_and_sigs", "namespaceecdsa_1_1test__malformed__sigs.html#a4f59577fa3e7acd4da4ce3e24b7ae102", null ],
+      [ "keys_and_string_sigs", "namespaceecdsa_1_1test__malformed__sigs.html#a53e8c98c712012850ed63d53de2ef511", null ],
+      [ "order", "namespaceecdsa_1_1test__malformed__sigs.html#ab6a3238718f2d2d4919f8bdf7da34dfb", null ],
+      [ "params", "namespaceecdsa_1_1test__malformed__sigs.html#a9a2ef2a9334c78b9d5428363504a1fce", null ],
+      [ "sk", "namespaceecdsa_1_1test__malformed__sigs.html#a1c74ec555eba5613ad44167f4fe03215", null ],
+      [ "slow_params", "namespaceecdsa_1_1test__malformed__sigs.html#a6fcfa4ad4a09ca8c7c9dc17cd0e2b1e6", null ]
+    ] ],
+    [ "test_numbertheory", "namespaceecdsa_1_1test__numbertheory.html", "namespaceecdsa_1_1test__numbertheory" ],
+    [ "test_pyecdsa", "namespaceecdsa_1_1test__pyecdsa.html", "namespaceecdsa_1_1test__pyecdsa" ],
+    [ "test_rw_lock", "namespaceecdsa_1_1test__rw__lock.html", "namespaceecdsa_1_1test__rw__lock" ],
+    [ "util", "namespaceecdsa_1_1util.html", "namespaceecdsa_1_1util" ]
+];

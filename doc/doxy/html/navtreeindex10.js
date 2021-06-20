@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"cffi__opcode_8py.html#afb64e09161c71408e1ebb02e7b42b2f2":[26,0,0,0,1,1,0,0,2,6,11],
-"cffi__opcode_8py.html#afe733a7b4232816e4e65608405e0bc8c":[26,0,0,0,1,1,0,0,2,6,18],
-"chardetect_8py.html":[26,0,0,0,1,1,0,0,8,1,2,0,1],
-"chardetect_8py.html#a970cd8c5964571647e9aed945fb91361":[26,0,0,0,1,1,0,0,8,1,2,0,1,0],
 "chardetect_8py.html#af87d264701f991d8bc4bd35121273285":[26,0,0,0,1,1,0,0,8,1,2,0,1,1],
 "chardistribution_8py.html":[26,0,0,0,1,1,0,0,8,1,2,5],
 "charsetgroupprober_8py.html":[26,0,0,0,1,1,0,0,8,1,2,6],
@@ -249,5 +245,9 @@ var NAVTREEINDEX10 =
 "classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html":[25,0,1,1,2,1],
 "classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html#a539628e29d56c4d7ede252f36e3cdc14":[25,0,1,1,2,1,3],
 "classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html#a55faf8da905eb6ae88ee5d0751cdd9d0":[25,0,1,1,2,1,2],
-"classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html#a6428062747c04d283b9bf79f16ba19fe":[25,0,1,1,2,1,0]
+"classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html#a6428062747c04d283b9bf79f16ba19fe":[25,0,1,1,2,1,0],
+"classboto3_1_1dynamodb_1_1transform_1_1_transformation_injector.html#a766b62e5f4a0081607a70b39690b8cac":[25,0,1,1,2,1,1],
+"classboto3_1_1dynamodb_1_1types_1_1_binary.html":[25,0,1,1,3,0],
+"classboto3_1_1dynamodb_1_1types_1_1_binary.html#a1b6ea5390382ef5e5233a1655753dd6c":[25,0,1,1,3,0,5],
+"classboto3_1_1dynamodb_1_1types_1_1_binary.html#a4f2afa4ad7b66e3a29bde3223025ffc6":[25,0,1,1,3,0,4]
 };

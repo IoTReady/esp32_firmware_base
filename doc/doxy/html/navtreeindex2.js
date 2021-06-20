@@ -1,9 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a69d749cf372e4b6e0e5f202cdb645fee":[26,0,0,0,0,0,1,0,3,0,0,0,8],
-"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a7c8510e5cd4b15ebea2fc3268cd5bb4a":[26,0,0,0,0,0,1,0,3,0,0,0,19],
-"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a80d534c1bf73c5c4aacd148cfcbef11b":[26,0,0,0,0,0,1,0,3,0,0,0,5],
-"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a826855d821708a27c9480a12528a16ab":[26,0,0,0,0,0,1,0,3,0,0,0,24],
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a939c2ffb6c613b59b9d90e18f8ace026":[26,0,0,0,0,0,1,0,3,0,0,0,26],
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a990de7fbd70659dafba8a982326e8644":[26,0,0,0,0,0,1,0,3,0,0,0,0],
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#aa6c6d979225eb348ab07054a8d3db6c6":[26,0,0,0,0,0,1,0,3,0,0,0,10],
@@ -249,5 +245,9 @@ var NAVTREEINDEX2 =
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a601cf9521da23f9137542d3fba2753d7":[26,0,0,0,0,0,1,0,1,0,1,49],
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a62afafc3563dacf4db1acf26e200d53d":[26,0,0,0,0,0,1,0,1,0,1,33],
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6325b386915531427d37b1669f2cc3b5":[26,0,0,0,0,0,1,0,1,0,1,35],
-"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a63eb21db0143804a05eb78406091b05e":[26,0,0,0,0,0,1,0,1,0,1,29]
+"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a63eb21db0143804a05eb78406091b05e":[26,0,0,0,0,0,1,0,1,0,1,29],
+"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a65ae59044a182876f19239ef18db96ee":[26,0,0,0,0,0,1,0,1,0,1,12],
+"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6605e0a739ba864fbfab94f9c1105aaa":[26,0,0,0,0,0,1,0,1,0,1,36],
+"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6a749e85b13b8784beb90c0ed972acd7":[26,0,0,0,0,0,1,0,1,0,1,48],
+"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6b9fc56b3dc0b1fb61745f206233bdc6":[26,0,0,0,0,0,1,0,1,0,1,17]
 };

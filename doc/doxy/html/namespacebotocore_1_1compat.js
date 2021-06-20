@@ -1,0 +1,25 @@
+var namespacebotocore_1_1compat =
+[
+    [ "HTTPHeaders", "classbotocore_1_1compat_1_1_h_t_t_p_headers.html", "classbotocore_1_1compat_1_1_h_t_t_p_headers" ],
+    [ "accepts_kwargs", "namespacebotocore_1_1compat.html#affca9249774569fedee400651c9931fe", null ],
+    [ "compat_shell_split", "namespacebotocore_1_1compat.html#aace074a1ca14ebad057229f7b09d7a78", null ],
+    [ "copy_kwargs", "namespacebotocore_1_1compat.html#aba9015701881045e4c4b1e7a2a575de1", null ],
+    [ "ensure_bytes", "namespacebotocore_1_1compat.html#a0914cb377284b8da412ded7134f0a921", null ],
+    [ "ensure_unicode", "namespacebotocore_1_1compat.html#a75db290b997d18d55db6f68d99925f99", null ],
+    [ "filter_ssl_warnings", "namespacebotocore_1_1compat.html#a2a189750beb9e9b13b63892d64f9e38f", null ],
+    [ "from_dict", "namespacebotocore_1_1compat.html#a2660b3a3f835b1caf224cdb872301a61", null ],
+    [ "from_pairs", "namespacebotocore_1_1compat.html#a44557e06280f85694f72224808d31dbf", null ],
+    [ "get_md5", "namespacebotocore_1_1compat.html#a660130767425a1676eec0b2f4aa15e0b", null ],
+    [ "get_tzinfo_options", "namespacebotocore_1_1compat.html#a54d230a4e5d6317225e4581642ee78cd", null ],
+    [ "set_socket_timeout", "namespacebotocore_1_1compat.html#abeed0fad8922577a968635c636f63cee", null ],
+    [ "total_seconds", "namespacebotocore_1_1compat.html#a3f9c107728ee586735eaf565b105e845", null ],
+    [ "unquote_str", "namespacebotocore_1_1compat.html#ad98e8e8ba8f11e096155a4bc6e72f472", null ],
+    [ "disabled", "namespacebotocore_1_1compat.html#ace9640cd73912af15659c71c0e74e79c", null ],
+    [ "file_type", "namespacebotocore_1_1compat.html#a02c0c8ae0da3432d510e13eae5fa56b2", null ],
+    [ "HAS_CRT", "namespacebotocore_1_1compat.html#a4e034394712bdabf4f744de5d923ee3b", null ],
+    [ "logger", "namespacebotocore_1_1compat.html#a33b310fb52f292e3ddb6adf463772edd", null ],
+    [ "MD5_AVAILABLE", "namespacebotocore_1_1compat.html#aa87252cb7e83e88bb9e8dde2e20029c2", null ],
+    [ "unquote_str", "namespacebotocore_1_1compat.html#a9b26826271d2d70633457f3340c54451", null ],
+    [ "XMLParseError", "namespacebotocore_1_1compat.html#a686ec5da796d73541895c12f5c3bbaa8", null ],
+    [ "zip", "namespacebotocore_1_1compat.html#a04fec040b5a89043cb1665cce36af326", null ]
+];

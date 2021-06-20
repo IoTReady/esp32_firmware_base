@@ -1,9 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a2dfa9ce356a08b16d94bd2f82f86b026":[25,0,2,9,0,1,1,9],
-"classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a42ce553164304e299269106e380f22f4":[25,0,2,9,0,1,1,12],
-"classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a501cf78ed06f1c5f070b4fec24536a55":[25,0,2,9,0,1,1,7],
-"classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a5624e138007ffcba0bf127a0894e3b00":[25,0,2,9,0,1,1,10],
 "classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a73b50a648f2e984fc456e6c6f4352430":[25,0,2,9,0,1,1,11],
 "classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a7aa3f3a2cd3445affd03b0df0a6c91b3":[25,0,2,9,0,1,1,0],
 "classbotocore_1_1docs_1_1bcdoc_1_1restdoc_1_1_document_structure.html#a8c4bdac8d1afc7774530f44e9269e8e7":[25,0,2,9,0,1,1,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX13 =
 "classbotocore_1_1exceptions_1_1_base_endpoint_resolver_error.html":[25,0,2,13,18],
 "classbotocore_1_1exceptions_1_1_boto_core_error.html":[25,0,2,13,0],
 "classbotocore_1_1exceptions_1_1_boto_core_error.html#a3f348f5f5b55d5a75d24816a6da21347":[25,0,2,13,0,1],
-"classbotocore_1_1exceptions_1_1_boto_core_error.html#a9ba802d66410a3676440ab7c9fc4f852":[25,0,2,13,0,0]
+"classbotocore_1_1exceptions_1_1_boto_core_error.html#a9ba802d66410a3676440ab7c9fc4f852":[25,0,2,13,0,0],
+"classbotocore_1_1exceptions_1_1_boto_core_error.html#a9ca6ab989431c4d8a3e62f35c0058084":[25,0,2,13,0,2],
+"classbotocore_1_1exceptions_1_1_capacity_not_available_error.html":[25,0,2,13,77],
+"classbotocore_1_1exceptions_1_1_checksum_error.html":[25,0,2,13,36],
+"classbotocore_1_1exceptions_1_1_client_error.html":[25,0,2,13,45]
 };

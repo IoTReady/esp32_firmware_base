@@ -1,0 +1,26 @@
+var setuptools_2__vendor_2packaging_2markers_8py =
+[
+    [ "InvalidMarker", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_invalid_marker.html", null ],
+    [ "UndefinedComparison", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_undefined_comparison.html", null ],
+    [ "UndefinedEnvironmentName", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_undefined_environment_name.html", null ],
+    [ "Node", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_node.html", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_node" ],
+    [ "Variable", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_variable.html", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_variable" ],
+    [ "Value", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_value.html", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_value" ],
+    [ "Op", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_op.html", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_op" ],
+    [ "Marker", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_marker.html", "classsetuptools_1_1__vendor_1_1packaging_1_1markers_1_1_marker" ],
+    [ "default_environment", "setuptools_2__vendor_2packaging_2markers_8py.html#a9fa619979508af28a6c53b0b61c3ae15", null ],
+    [ "format_full_version", "setuptools_2__vendor_2packaging_2markers_8py.html#ae9c8124133d5c113bfe9a21fb6b9cd04", null ],
+    [ "ALIASES", "setuptools_2__vendor_2packaging_2markers_8py.html#a3961210fadbc14d465874e34d675b741", null ],
+    [ "BOOLOP", "setuptools_2__vendor_2packaging_2markers_8py.html#a491871c5d99c3bf38d4fe22bc580e76f", null ],
+    [ "LPAREN", "setuptools_2__vendor_2packaging_2markers_8py.html#a3ebc8206e3652278c8b679f53f63b808", null ],
+    [ "MARKER", "setuptools_2__vendor_2packaging_2markers_8py.html#a30885a40c7f427ed3d9e48578dbd1a9e", null ],
+    [ "MARKER_ATOM", "setuptools_2__vendor_2packaging_2markers_8py.html#a61c041105dd50e8df4fa82ca8a24e165", null ],
+    [ "MARKER_EXPR", "setuptools_2__vendor_2packaging_2markers_8py.html#ab9cab017631765e5f92c71c6e9a7040d", null ],
+    [ "MARKER_ITEM", "setuptools_2__vendor_2packaging_2markers_8py.html#a09f5a22d9147ab9be7a6fbd993a28025", null ],
+    [ "MARKER_OP", "setuptools_2__vendor_2packaging_2markers_8py.html#ab6c386398e040ab8bc861ac909dfa032", null ],
+    [ "MARKER_VALUE", "setuptools_2__vendor_2packaging_2markers_8py.html#ac51610cd5a920fcc9e3de4654bf3fffb", null ],
+    [ "MARKER_VAR", "setuptools_2__vendor_2packaging_2markers_8py.html#a341d46067a2a20ccf052242f8704a616", null ],
+    [ "RPAREN", "setuptools_2__vendor_2packaging_2markers_8py.html#a7931171c32f82d5b17dd05dbd6898ae1", null ],
+    [ "VARIABLE", "setuptools_2__vendor_2packaging_2markers_8py.html#a021c8e62dd311d156adb2106b1225267", null ],
+    [ "VERSION_CMP", "setuptools_2__vendor_2packaging_2markers_8py.html#a749acffb82482133fbe0d13f0e4c1a84", null ]
+];

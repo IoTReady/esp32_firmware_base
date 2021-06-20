@@ -1,0 +1,5 @@
+var namespacecryptography_1_1hazmat_1_1backends_1_1openssl_1_1ed25519 =
+[
+    [ "_Ed25519PublicKey", "classcryptography_1_1hazmat_1_1backends_1_1openssl_1_1ed25519_1_1___ed25519_public_key.html", "classcryptography_1_1hazmat_1_1backends_1_1openssl_1_1ed25519_1_1___ed25519_public_key" ],
+    [ "_Ed25519PrivateKey", "classcryptography_1_1hazmat_1_1backends_1_1openssl_1_1ed25519_1_1___ed25519_private_key.html", "classcryptography_1_1hazmat_1_1backends_1_1openssl_1_1ed25519_1_1___ed25519_private_key" ]
+];

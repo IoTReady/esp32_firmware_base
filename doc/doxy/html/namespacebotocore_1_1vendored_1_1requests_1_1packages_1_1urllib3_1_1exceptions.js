@@ -1,0 +1,28 @@
+var namespacebotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions =
+[
+    [ "HTTPError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_h_t_t_p_error.html", null ],
+    [ "HTTPWarning", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_h_t_t_p_warning.html", null ],
+    [ "PoolError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_pool_error.html", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_pool_error" ],
+    [ "RequestError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_request_error.html", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_request_error" ],
+    [ "SSLError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_s_s_l_error.html", null ],
+    [ "ProxyError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_proxy_error.html", null ],
+    [ "DecodeError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_decode_error.html", null ],
+    [ "ProtocolError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_protocol_error.html", null ],
+    [ "MaxRetryError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_max_retry_error.html", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_max_retry_error" ],
+    [ "HostChangedError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_host_changed_error.html", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_host_changed_error" ],
+    [ "TimeoutStateError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_timeout_state_error.html", null ],
+    [ "TimeoutError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_timeout_error.html", null ],
+    [ "ReadTimeoutError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_read_timeout_error.html", null ],
+    [ "ConnectTimeoutError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_connect_timeout_error.html", null ],
+    [ "EmptyPoolError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_empty_pool_error.html", null ],
+    [ "ClosedPoolError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_closed_pool_error.html", null ],
+    [ "LocationValueError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_location_value_error.html", null ],
+    [ "LocationParseError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_location_parse_error.html", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_location_parse_error" ],
+    [ "ResponseError", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_response_error.html", null ],
+    [ "SecurityWarning", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_security_warning.html", null ],
+    [ "InsecureRequestWarning", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_insecure_request_warning.html", null ],
+    [ "SystemTimeWarning", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_system_time_warning.html", null ],
+    [ "InsecurePlatformWarning", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_insecure_platform_warning.html", null ],
+    [ "ResponseNotChunked", "classbotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions_1_1_response_not_chunked.html", null ],
+    [ "ConnectionError", "namespacebotocore_1_1vendored_1_1requests_1_1packages_1_1urllib3_1_1exceptions.html#add43df2f952a3462dd4506638c5bedf6", null ]
+];

@@ -1,9 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"__internal_2utils_2misc_8py.html#a83f5a831d098f26759567f070646ef49":[26,0,0,0,1,1,0,0,8,0,11,16,10],
-"__internal_2utils_2misc_8py.html#a847f7057fa8b6316f423717b479606ac":[26,0,0,0,1,1,0,0,8,0,11,16,7],
-"__internal_2utils_2misc_8py.html#a8e1a385d363d4b5fdc42370dfd017a5d":[26,0,0,0,1,1,0,0,8,0,11,16,4],
-"__internal_2utils_2misc_8py.html#a9594cfa80c3e1c931446b2ea25904443":[26,0,0,0,1,1,0,0,8,0,11,16,33],
 "__internal_2utils_2misc_8py.html#a98abe89494768a7d24cda2c624c12600":[26,0,0,0,1,1,0,0,8,0,11,16,49],
 "__internal_2utils_2misc_8py.html#a9abdfe6fcceccee8a7c651f6c9014a87":[26,0,0,0,1,1,0,0,8,0,11,16,15],
 "__internal_2utils_2misc_8py.html#a9ec01c897364c3352bdf608fb36f1f66":[26,0,0,0,1,1,0,0,8,0,11,16,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a56207bd83241b9d3725cb1f0fcddc812":[26,0,0,0,0,0,1,0,3,0,0,0,25],
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a56924a0ab46fb3d02329954fe478d99c":[26,0,0,0,0,0,1,0,3,0,0,0,7],
 "aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a5a4c1a56ea1abf6c52893aa3c9852c7a":[26,0,0,0,0,0,1,0,3,0,0,0,13],
-"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a619d3fdc76fef6793e59e613744029c2":[26,0,0,0,0,0,1,0,3,0,0,0,14]
+"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a619d3fdc76fef6793e59e613744029c2":[26,0,0,0,0,0,1,0,3,0,0,0,14],
+"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a69d749cf372e4b6e0e5f202cdb645fee":[26,0,0,0,0,0,1,0,3,0,0,0,8],
+"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a7c8510e5cd4b15ebea2fc3268cd5bb4a":[26,0,0,0,0,0,1,0,3,0,0,0,19],
+"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a80d534c1bf73c5c4aacd148cfcbef11b":[26,0,0,0,0,0,1,0,3,0,0,0,5],
+"aws-iot-device-sdk-embedded-_c_2samples_2linux_2jobs__sample_2aws__iot__config_8h.html#a826855d821708a27c9480a12528a16ab":[26,0,0,0,0,0,1,0,3,0,0,0,24]
 };

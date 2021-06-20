@@ -1,0 +1,4 @@
+var namespaceespressif_1_1efuse_1_1esp32s3beta3_1_1emulate__efuse__controller =
+[
+    [ "EmulateEfuseController", "classespressif_1_1efuse_1_1esp32s3beta3_1_1emulate__efuse__controller_1_1_emulate_efuse_controller.html", "classespressif_1_1efuse_1_1esp32s3beta3_1_1emulate__efuse__controller_1_1_emulate_efuse_controller" ]
+];

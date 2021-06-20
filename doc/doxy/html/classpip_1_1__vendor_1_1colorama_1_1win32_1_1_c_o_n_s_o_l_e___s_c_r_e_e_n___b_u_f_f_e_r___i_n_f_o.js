@@ -1,0 +1,4 @@
+var classpip_1_1__vendor_1_1colorama_1_1win32_1_1_c_o_n_s_o_l_e___s_c_r_e_e_n___b_u_f_f_e_r___i_n_f_o =
+[
+    [ "__str__", "classpip_1_1__vendor_1_1colorama_1_1win32_1_1_c_o_n_s_o_l_e___s_c_r_e_e_n___b_u_f_f_e_r___i_n_f_o.html#a306c882ab23ff1d625c15a8e054f0cc0", null ]
+];

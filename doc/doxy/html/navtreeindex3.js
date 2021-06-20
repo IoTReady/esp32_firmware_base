@@ -1,9 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a65ae59044a182876f19239ef18db96ee":[26,0,0,0,0,0,1,0,1,0,1,12],
-"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6605e0a739ba864fbfab94f9c1105aaa":[26,0,0,0,0,0,1,0,1,0,1,36],
-"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6a749e85b13b8784beb90c0ed972acd7":[26,0,0,0,0,0,1,0,1,0,1,48],
-"aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a6b9fc56b3dc0b1fb61745f206233bdc6":[26,0,0,0,0,0,1,0,1,0,1,17],
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a73620f5d6851364bb48fb98ddf4fdc6b":[26,0,0,0,0,0,1,0,1,0,1,52],
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a7b14e41ad806f817f988d9ed59bd6476":[26,0,0,0,0,0,1,0,1,0,1,53],
 "aws__iot__error_8h.html#a329da5c3a42979b72561e28e749f6921a7e1de78461644d424ca0fc9ef7758a43":[26,0,0,0,0,0,1,0,1,0,1,8],
@@ -249,5 +245,9 @@ var NAVTREEINDEX3 =
 "aws__iot__mqtt__client__common__internal_8h.html":[26,0,0,0,0,0,1,0,1,8],
 "aws__iot__mqtt__client__common__internal_8h.html#a131e7642adb922f79a5f90da7a7a5ab9":[26,0,0,0,0,0,1,0,1,8,20],
 "aws__iot__mqtt__client__common__internal_8h.html#a205d6a26a871bafce794a5a6db0275e7":[26,0,0,0,0,0,1,0,1,8,3],
-"aws__iot__mqtt__client__common__internal_8h.html#a319907d676f74ee5b5947b4afa2eeb22":[26,0,0,0,0,0,1,0,1,8,22]
+"aws__iot__mqtt__client__common__internal_8h.html#a319907d676f74ee5b5947b4afa2eeb22":[26,0,0,0,0,0,1,0,1,8,22],
+"aws__iot__mqtt__client__common__internal_8h.html#a361f60e8f00c32779aada94152af6842":[26,0,0,0,0,0,1,0,1,8,14],
+"aws__iot__mqtt__client__common__internal_8h.html#a371b932d94b85fd889edebc9296cd890":[26,0,0,0,0,0,1,0,1,8,9],
+"aws__iot__mqtt__client__common__internal_8h.html#a3d177fd562d07079c9d1f7b98fd8dd45":[26,0,0,0,0,0,1,0,1,8,17],
+"aws__iot__mqtt__client__common__internal_8h.html#a48c5dbdd13ba1a82836e42483f0b7f3a":[26,0,0,0,0,0,1,0,1,8,10]
 };

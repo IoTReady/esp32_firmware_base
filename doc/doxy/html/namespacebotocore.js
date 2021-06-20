@@ -1,0 +1,58 @@
+var namespacebotocore =
+[
+    [ "args", "namespacebotocore_1_1args.html", "namespacebotocore_1_1args" ],
+    [ "auth", "namespacebotocore_1_1auth.html", "namespacebotocore_1_1auth" ],
+    [ "awsrequest", "namespacebotocore_1_1awsrequest.html", "namespacebotocore_1_1awsrequest" ],
+    [ "client", "namespacebotocore_1_1client.html", "namespacebotocore_1_1client" ],
+    [ "compat", "namespacebotocore_1_1compat.html", "namespacebotocore_1_1compat" ],
+    [ "config", "namespacebotocore_1_1config.html", "namespacebotocore_1_1config" ],
+    [ "configloader", "namespacebotocore_1_1configloader.html", [
+      [ "build_profile_map", "namespacebotocore_1_1configloader.html#a0f5c88bd0c239dd55847c074bdc89416", null ],
+      [ "load_config", "namespacebotocore_1_1configloader.html#a51a931d39212bc5e755615daf3b69ff9", null ],
+      [ "multi_file_load_config", "namespacebotocore_1_1configloader.html#a2fd2c872855122130546202b934f069d", null ],
+      [ "raw_config_parse", "namespacebotocore_1_1configloader.html#a7589742f9a3c1fb00df0810c0e499737", null ]
+    ] ],
+    [ "configprovider", "namespacebotocore_1_1configprovider.html", [
+      [ "logger", "namespacebotocore_1_1configprovider.html#a5e3f7e036e51b01571fb31c96f185534", null ]
+    ] ],
+    [ "credentials", "namespacebotocore_1_1credentials.html", "namespacebotocore_1_1credentials" ],
+    [ "crt", "namespacebotocore_1_1crt.html", "namespacebotocore_1_1crt" ],
+    [ "discovery", "namespacebotocore_1_1discovery.html", "namespacebotocore_1_1discovery" ],
+    [ "docs", "namespacebotocore_1_1docs.html", "namespacebotocore_1_1docs" ],
+    [ "endpoint", "namespacebotocore_1_1endpoint.html", "namespacebotocore_1_1endpoint" ],
+    [ "errorfactory", "namespacebotocore_1_1errorfactory.html", "namespacebotocore_1_1errorfactory" ],
+    [ "eventstream", "namespacebotocore_1_1eventstream.html", "namespacebotocore_1_1eventstream" ],
+    [ "exceptions", "namespacebotocore_1_1exceptions.html", "namespacebotocore_1_1exceptions" ],
+    [ "handlers", "namespacebotocore_1_1handlers.html", "namespacebotocore_1_1handlers" ],
+    [ "history", "namespacebotocore_1_1history.html", "namespacebotocore_1_1history" ],
+    [ "hooks", "namespacebotocore_1_1hooks.html", "namespacebotocore_1_1hooks" ],
+    [ "httpsession", "namespacebotocore_1_1httpsession.html", "namespacebotocore_1_1httpsession" ],
+    [ "loaders", "namespacebotocore_1_1loaders.html", "namespacebotocore_1_1loaders" ],
+    [ "model", "namespacebotocore_1_1model.html", "namespacebotocore_1_1model" ],
+    [ "monitoring", "namespacebotocore_1_1monitoring.html", "namespacebotocore_1_1monitoring" ],
+    [ "paginate", "namespacebotocore_1_1paginate.html", "namespacebotocore_1_1paginate" ],
+    [ "parsers", "namespacebotocore_1_1parsers.html", "namespacebotocore_1_1parsers" ],
+    [ "regions", "namespacebotocore_1_1regions.html", "namespacebotocore_1_1regions" ],
+    [ "response", "namespacebotocore_1_1response.html", "namespacebotocore_1_1response" ],
+    [ "retries", "namespacebotocore_1_1retries.html", "namespacebotocore_1_1retries" ],
+    [ "retryhandler", "namespacebotocore_1_1retryhandler.html", "namespacebotocore_1_1retryhandler" ],
+    [ "serialize", "namespacebotocore_1_1serialize.html", "namespacebotocore_1_1serialize" ],
+    [ "session", "namespacebotocore_1_1session.html", "namespacebotocore_1_1session" ],
+    [ "signers", "namespacebotocore_1_1signers.html", "namespacebotocore_1_1signers" ],
+    [ "stub", "namespacebotocore_1_1stub.html", "namespacebotocore_1_1stub" ],
+    [ "translate", "namespacebotocore_1_1translate.html", [
+      [ "build_retry_config", "namespacebotocore_1_1translate.html#a33832daf41fc0470510b347c9a25b612", null ],
+      [ "resolve_references", "namespacebotocore_1_1translate.html#ac50d250f75e64de5f6dce88dc25de52b", null ]
+    ] ],
+    [ "utils", "namespacebotocore_1_1utils.html", "namespacebotocore_1_1utils" ],
+    [ "validate", "namespacebotocore_1_1validate.html", "namespacebotocore_1_1validate" ],
+    [ "vendored", "namespacebotocore_1_1vendored.html", "namespacebotocore_1_1vendored" ],
+    [ "waiter", "namespacebotocore_1_1waiter.html", "namespacebotocore_1_1waiter" ],
+    [ "NullHandler", "classbotocore_1_1_null_handler.html", "classbotocore_1_1_null_handler" ],
+    [ "UNSIGNED", "classbotocore_1_1_u_n_s_i_g_n_e_d.html", "classbotocore_1_1_u_n_s_i_g_n_e_d" ],
+    [ "xform_name", "namespacebotocore.html#adcbceaa8db448715775b8a6168bdefe0", null ],
+    [ "BOTOCORE_ROOT", "namespacebotocore.html#a2b862871e00471ad484c95e80a2359e2", null ],
+    [ "log", "namespacebotocore.html#a79747cc57b4ab43d4dfc3e09dab83753", null ],
+    [ "ScalarTypes", "namespacebotocore.html#ae3f3c2dcb1dcc2b4cc43e217f65d31ce", null ],
+    [ "UNSIGNED", "namespacebotocore.html#af9a030b30c28fe406429c98ce868ea50", null ]
+];

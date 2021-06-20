@@ -1,0 +1,27 @@
+var namespaces3transfer_1_1utils =
+[
+    [ "CallArgs", "classs3transfer_1_1utils_1_1_call_args.html", "classs3transfer_1_1utils_1_1_call_args" ],
+    [ "FunctionContainer", "classs3transfer_1_1utils_1_1_function_container.html", "classs3transfer_1_1utils_1_1_function_container" ],
+    [ "CountCallbackInvoker", "classs3transfer_1_1utils_1_1_count_callback_invoker.html", "classs3transfer_1_1utils_1_1_count_callback_invoker" ],
+    [ "OSUtils", "classs3transfer_1_1utils_1_1_o_s_utils.html", "classs3transfer_1_1utils_1_1_o_s_utils" ],
+    [ "DeferredOpenFile", "classs3transfer_1_1utils_1_1_deferred_open_file.html", "classs3transfer_1_1utils_1_1_deferred_open_file" ],
+    [ "ReadFileChunk", "classs3transfer_1_1utils_1_1_read_file_chunk.html", "classs3transfer_1_1utils_1_1_read_file_chunk" ],
+    [ "StreamReaderProgress", "classs3transfer_1_1utils_1_1_stream_reader_progress.html", "classs3transfer_1_1utils_1_1_stream_reader_progress" ],
+    [ "NoResourcesAvailable", "classs3transfer_1_1utils_1_1_no_resources_available.html", null ],
+    [ "TaskSemaphore", "classs3transfer_1_1utils_1_1_task_semaphore.html", "classs3transfer_1_1utils_1_1_task_semaphore" ],
+    [ "SlidingWindowSemaphore", "classs3transfer_1_1utils_1_1_sliding_window_semaphore.html", "classs3transfer_1_1utils_1_1_sliding_window_semaphore" ],
+    [ "ChunksizeAdjuster", "classs3transfer_1_1utils_1_1_chunksize_adjuster.html", "classs3transfer_1_1utils_1_1_chunksize_adjuster" ],
+    [ "calculate_num_parts", "namespaces3transfer_1_1utils.html#ad1d32d6e0e2bd6fea96bdadbb0158987", null ],
+    [ "calculate_range_parameter", "namespaces3transfer_1_1utils.html#aa95e5d94df5d8a077f55ab6194d5daca", null ],
+    [ "get_callbacks", "namespaces3transfer_1_1utils.html#abe34eeccc6332668c7bec12ffb3c5684", null ],
+    [ "get_filtered_dict", "namespaces3transfer_1_1utils.html#acdedaf5e76b15454d6b016e23477a25d", null ],
+    [ "invoke_progress_callbacks", "namespaces3transfer_1_1utils.html#a6282d85412215f94416e4202e0ccc06e", null ],
+    [ "random_file_extension", "namespaces3transfer_1_1utils.html#a1e0e5c254012f83cd2bb4faa4699bfb4", null ],
+    [ "signal_not_transferring", "namespaces3transfer_1_1utils.html#a89ee8f2703779e6e49daa604bf3a9f8d", null ],
+    [ "signal_transferring", "namespaces3transfer_1_1utils.html#a1f5fd59a673140c4f9f83f2c3861008a", null ],
+    [ "logger", "namespaces3transfer_1_1utils.html#a958b98fafc781d568387c4ea9635f787", null ],
+    [ "MAX_PARTS", "namespaces3transfer_1_1utils.html#a8422e7e009a3e1aa27274a26298df8ce", null ],
+    [ "MAX_SINGLE_UPLOAD_SIZE", "namespaces3transfer_1_1utils.html#a919ca0d69abb6651fe56beec1ff278ce", null ],
+    [ "MIN_UPLOAD_CHUNKSIZE", "namespaces3transfer_1_1utils.html#a7c12ef4ac4bba114c5c286ed320bd4b2", null ],
+    [ "S3_RETRYABLE_DOWNLOAD_ERRORS", "namespaces3transfer_1_1utils.html#af2f2ee2daad27b2e7c8831687c6bd108", null ]
+];

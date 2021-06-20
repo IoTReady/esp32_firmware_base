@@ -1,0 +1,27 @@
+var classecdsa_1_1test__curves_1_1_test_parameter_encoding =
+[
+    [ "setUpClass", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a6d9c899952de624395d33e1fac512d1b", null ],
+    [ "test_compare_curves_with_different_generators", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#af40ee59c649519bdf65cfbcc013781f4", null ],
+    [ "test_compare_with_different_object", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a6dee56e136cfddd25c43f8b8e1e21c8c", null ],
+    [ "test_decode_malformed_explicit_garbage_after_ECParam", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a2ba9d0d6d58c8e774fc9d377a5f18ffa", null ],
+    [ "test_decode_malformed_garbage_after_prime", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a5ae040aa1d5689b9937d13dfde0a7aa3", null ],
+    [ "test_decode_malformed_named_curve", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a901e958c972ae4209a517c18a374e847", null ],
+    [ "test_decode_malformed_unknown_field_type", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a513bc3e6c59aae3e0ec33063e247f9f1", null ],
+    [ "test_decode_malformed_unknown_version_number", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a84ed98ec98468d4d5716de1ebe259e63", null ],
+    [ "test_decoding_explicit_from_openssl", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a27f3ae67687c6d770b169fd3e43642ed", null ],
+    [ "test_decoding_well_known_from_explicit_params", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#affba13337213a4b1e7d597f51c742dde", null ],
+    [ "test_decoding_with_incorrect_valid_encodings", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#ac35c39c1aff4966800e359fe5558f4d9", null ],
+    [ "test_default_encode_for_custom_curve", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a930d53f5b08032135d6ea8d45b81db12", null ],
+    [ "test_encoding_to_explicit_compressed_params", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a3577097ec3715e1969e33343641101c7", null ],
+    [ "test_encoding_to_explicit_params", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#ad69208c709cf2106efe4346592bf794d", null ],
+    [ "test_from_pem", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a432bba3b24c81e807b3fdf58c63c0079", null ],
+    [ "test_from_pem_with_explicit_when_explicit_disabled", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#ab088263a397669d4ca43dc0bb58fca2b", null ],
+    [ "test_from_pem_with_named_curve_with_named_curve_disabled", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a7130c90b8e325021c3a220d3997c3a65", null ],
+    [ "test_from_pem_with_wrong_header", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a207e151c8697cb77d20759b8afb9695e", null ],
+    [ "test_named_curve_encode_for_custom_curve", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#aa165bd2eb390aa61f263c5b43b5a5f83", null ],
+    [ "test_named_curve_params_der", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#abc476a155565bab9fe17423314b54802", null ],
+    [ "test_to_pem", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#aeff565004426f0cc8e9ee8774c4cdeba", null ],
+    [ "test_try_decoding_binary_explicit", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a5d4df855b5138b26df9470b384dd0011", null ],
+    [ "test_verify_that_default_is_named_curve_der", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a964c674833ae11e626a85e4cf98a28da", null ],
+    [ "base64_params", "classecdsa_1_1test__curves_1_1_test_parameter_encoding.html#a5f717136f70c14c50dfe86f8f883e87a", null ]
+];

@@ -1,0 +1,27 @@
+var namespacesetuptools_1_1command =
+[
+    [ "alias", "namespacesetuptools_1_1command_1_1alias.html", "namespacesetuptools_1_1command_1_1alias" ],
+    [ "bdist_egg", "namespacesetuptools_1_1command_1_1bdist__egg.html", "namespacesetuptools_1_1command_1_1bdist__egg" ],
+    [ "bdist_rpm", "namespacesetuptools_1_1command_1_1bdist__rpm.html", "namespacesetuptools_1_1command_1_1bdist__rpm" ],
+    [ "bdist_wininst", "namespacesetuptools_1_1command_1_1bdist__wininst.html", "namespacesetuptools_1_1command_1_1bdist__wininst" ],
+    [ "build_clib", "namespacesetuptools_1_1command_1_1build__clib.html", "namespacesetuptools_1_1command_1_1build__clib" ],
+    [ "build_ext", "namespacesetuptools_1_1command_1_1build__ext.html", "namespacesetuptools_1_1command_1_1build__ext" ],
+    [ "build_py", "namespacesetuptools_1_1command_1_1build__py.html", "namespacesetuptools_1_1command_1_1build__py" ],
+    [ "develop", "namespacesetuptools_1_1command_1_1develop.html", "namespacesetuptools_1_1command_1_1develop" ],
+    [ "dist_info", "namespacesetuptools_1_1command_1_1dist__info.html", "namespacesetuptools_1_1command_1_1dist__info" ],
+    [ "easy_install", "namespacesetuptools_1_1command_1_1easy__install.html", "namespacesetuptools_1_1command_1_1easy__install" ],
+    [ "egg_info", "namespacesetuptools_1_1command_1_1egg__info.html", "namespacesetuptools_1_1command_1_1egg__info" ],
+    [ "install", "namespacesetuptools_1_1command_1_1install.html", "namespacesetuptools_1_1command_1_1install" ],
+    [ "install_egg_info", "namespacesetuptools_1_1command_1_1install__egg__info.html", "namespacesetuptools_1_1command_1_1install__egg__info" ],
+    [ "install_lib", "namespacesetuptools_1_1command_1_1install__lib.html", "namespacesetuptools_1_1command_1_1install__lib" ],
+    [ "install_scripts", "namespacesetuptools_1_1command_1_1install__scripts.html", "namespacesetuptools_1_1command_1_1install__scripts" ],
+    [ "py36compat", "namespacesetuptools_1_1command_1_1py36compat.html", "namespacesetuptools_1_1command_1_1py36compat" ],
+    [ "register", "namespacesetuptools_1_1command_1_1register.html", "namespacesetuptools_1_1command_1_1register" ],
+    [ "rotate", "namespacesetuptools_1_1command_1_1rotate.html", "namespacesetuptools_1_1command_1_1rotate" ],
+    [ "saveopts", "namespacesetuptools_1_1command_1_1saveopts.html", "namespacesetuptools_1_1command_1_1saveopts" ],
+    [ "sdist", "namespacesetuptools_1_1command_1_1sdist.html", "namespacesetuptools_1_1command_1_1sdist" ],
+    [ "setopt", "namespacesetuptools_1_1command_1_1setopt.html", "namespacesetuptools_1_1command_1_1setopt" ],
+    [ "test", "namespacesetuptools_1_1command_1_1test.html", "namespacesetuptools_1_1command_1_1test" ],
+    [ "upload", "namespacesetuptools_1_1command_1_1upload.html", "namespacesetuptools_1_1command_1_1upload" ],
+    [ "upload_docs", "namespacesetuptools_1_1command_1_1upload__docs.html", "namespacesetuptools_1_1command_1_1upload__docs" ]
+];

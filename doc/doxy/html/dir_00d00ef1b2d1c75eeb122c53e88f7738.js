@@ -1,0 +1,47 @@
+var dir_00d00ef1b2d1c75eeb122c53e88f7738 =
+[
+    [ "crt", "dir_96fc3ceb745cfd785a61fd8bd85bbcf5.html", "dir_96fc3ceb745cfd785a61fd8bd85bbcf5" ],
+    [ "docs", "dir_d5bc2765696156465cf6fcf203789761.html", "dir_d5bc2765696156465cf6fcf203789761" ],
+    [ "retries", "dir_4dcc08c5204066addf4341e2d6d2d676.html", "dir_4dcc08c5204066addf4341e2d6d2d676" ],
+    [ "vendored", "dir_1b7a87a62285a08129754b7928dbdb15.html", "dir_1b7a87a62285a08129754b7928dbdb15" ],
+    [ "__init__.py", "botocore_2____init_____8py.html", "botocore_2____init_____8py" ],
+    [ "args.py", "args_8py.html", "args_8py" ],
+    [ "auth.py", "botocore_2auth_8py.html", "botocore_2auth_8py" ],
+    [ "awsrequest.py", "awsrequest_8py.html", "awsrequest_8py" ],
+    [ "client.py", "botocore_2client_8py.html", "botocore_2client_8py" ],
+    [ "compat.py", "botocore_2compat_8py.html", "botocore_2compat_8py" ],
+    [ "config.py", "botocore_2config_8py.html", [
+      [ "Config", "classbotocore_1_1config_1_1_config.html", "classbotocore_1_1config_1_1_config" ]
+    ] ],
+    [ "configloader.py", "configloader_8py.html", "configloader_8py" ],
+    [ "configprovider.py", "configprovider_8py.html", "configprovider_8py" ],
+    [ "credentials.py", "credentials_8py.html", "credentials_8py" ],
+    [ "discovery.py", "discovery_8py.html", "discovery_8py" ],
+    [ "endpoint.py", "endpoint_8py.html", "endpoint_8py" ],
+    [ "errorfactory.py", "errorfactory_8py.html", [
+      [ "BaseClientExceptions", "classbotocore_1_1errorfactory_1_1_base_client_exceptions.html", "classbotocore_1_1errorfactory_1_1_base_client_exceptions" ],
+      [ "ClientExceptionsFactory", "classbotocore_1_1errorfactory_1_1_client_exceptions_factory.html", "classbotocore_1_1errorfactory_1_1_client_exceptions_factory" ]
+    ] ],
+    [ "eventstream.py", "eventstream_8py.html", "eventstream_8py" ],
+    [ "exceptions.py", "botocore_2exceptions_8py.html", "botocore_2exceptions_8py" ],
+    [ "handlers.py", "handlers_8py.html", "handlers_8py" ],
+    [ "history.py", "history_8py.html", "history_8py" ],
+    [ "hooks.py", "botocore_2hooks_8py.html", "botocore_2hooks_8py" ],
+    [ "httpsession.py", "httpsession_8py.html", "httpsession_8py" ],
+    [ "loaders.py", "loaders_8py.html", "loaders_8py" ],
+    [ "model.py", "botocore_2model_8py.html", "botocore_2model_8py" ],
+    [ "monitoring.py", "monitoring_8py.html", "monitoring_8py" ],
+    [ "paginate.py", "paginate_8py.html", "paginate_8py" ],
+    [ "parsers.py", "parsers_8py.html", "parsers_8py" ],
+    [ "regions.py", "regions_8py.html", "regions_8py" ],
+    [ "response.py", "botocore_2response_8py.html", "botocore_2response_8py" ],
+    [ "retryhandler.py", "retryhandler_8py.html", "retryhandler_8py" ],
+    [ "serialize.py", "botocore_2serialize_8py.html", "botocore_2serialize_8py" ],
+    [ "session.py", "botocore_2session_8py.html", "botocore_2session_8py" ],
+    [ "signers.py", "signers_8py.html", "signers_8py" ],
+    [ "stub.py", "stub_8py.html", "stub_8py" ],
+    [ "translate.py", "translate_8py.html", "translate_8py" ],
+    [ "utils.py", "botocore_2utils_8py.html", "botocore_2utils_8py" ],
+    [ "validate.py", "validate_8py.html", "validate_8py" ],
+    [ "waiter.py", "botocore_2waiter_8py.html", "botocore_2waiter_8py" ]
+];
