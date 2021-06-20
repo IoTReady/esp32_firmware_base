@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('md_examples_wifi_config_over_ble__r_e_
 <div class="title">WiFi configuration on the ESP32 over Bluetooth </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md12"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md99"></a>
 Overview</h1>
 <p>IoT devices dont always have an accessible local user interface, resulting in almost zero capabilitiy for interaction with them after deployment if they are not connected to the cloud infrastructure that supports them. Unfortunately there are more than a few chances of an unforeseen circumstance occuring where the device needs to be reconfigured.</p>
 <p>Let's talk about a simple example. Your ESP32 devices are functioning in station mode and are connected to your company sub-network. Your company changes your subnet SSID and as a result credentials have to be updated across your set of nodes. If you hadn't foreseen this use-case, you have to go through a laborious task of bringing these devices down one-by-one and re-configuring them before they are deployed again. Wouldn't it be helpful if you had some kind of local access that didn't depend on the main infrastructure being up and running ?</p>
@@ -99,7 +99,7 @@ Overview</h1>
 <li><a href="../../lib/wifi_config_ble">wifi_config_ble</a></li>
 <li><a href="../../lib/wifi_station">wifi_station</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md100"></a>
 Bluetooth Specification Documentation</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -111,14 +111,14 @@ Bluetooth Specification Documentation</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>0x00EE</code>   </td><td class="markdownTableBodyNone"><code>0xEE02</code>   </td><td class="markdownTableBodyNone">WiFi Connect   </td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md101"></a>
 How to use example</h1>
 <ul>
 <li>Build and flash the example normally as any other ESP-IDF project. No special configuration is required during this process.</li>
 <li>The ESP32 will create a BLE server with the advertisement name IoT-&lt;12-digit-mac-address&gt;</li>
 <li>Connect to the device and send data to the device according to the specification table above. You can use any BLE app to do so.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md102"></a>
 Hardware Required</h2>
 <p>To run this example, you need:</p><ul>
 <li>An ESP32 dev board (e.g. ESP32-WROVER Kit, ESP32-Ethernet-Kit) or ESP32 core board (e.g. ESP32-DevKitC).</li>

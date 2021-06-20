@@ -6,6 +6,7 @@ var system__statistics_2main_2tasks_8c =
     [ "free_heap_monitor_task", "system__statistics_2main_2tasks_8c.html#a1edfef22dbd0d56c3e3e7998281f5141", null ],
     [ "initialize_tasks", "system__statistics_2main_2tasks_8c.html#a6bbe368ed0907f5f8b92e0092ba044bd", null ],
     [ "system_stats_task", "system__statistics_2main_2tasks_8c.html#a52e70b3db1fa4e48299b4b3daae9097c", null ],
+    [ "system_stats_task_json", "system__statistics_2main_2tasks_8c.html#adb8ad338bc9e6d52f432654e4be85334", null ],
     [ "task1", "system__statistics_2main_2tasks_8c.html#a39542ccd929d82b3d70434fc6c03cde9", null ],
     [ "task2", "system__statistics_2main_2tasks_8c.html#a8873379ac3ff18bce730e90e44aaf384", null ],
     [ "task3", "system__statistics_2main_2tasks_8c.html#a63f7115038abb6738e97a3f458afc50d", null ],

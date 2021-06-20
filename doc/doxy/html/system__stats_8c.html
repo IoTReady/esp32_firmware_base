@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ESP32 Quick Start Building Blocks: lib/system_stats/system_stats.c File Reference</title>
+<title>ESP32 Quick Start Building Blocks: lib/system_stats/src/system_stats.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('system__stats_8c.html',''); initResiza
 <code>#include &quot;esp_system.h&quot;</code><br />
 <code>#include &quot;esp_log.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="system__stats_8h_source.html">system_stats.h</a>&quot;</code><br />
+<code>#include &quot;common.h&quot;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -111,6 +112,10 @@ Functions</h2></td></tr>
 <tr class="memitem:af0bdc5b088ee77bb43e90ee7b3c2bce0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__stats_8c.html#af0bdc5b088ee77bb43e90ee7b3c2bce0">system_get_free_heap</a> ()</td></tr>
 <tr class="memdesc:af0bdc5b088ee77bb43e90ee7b3c2bce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to get free heap size.  <a href="system__stats_8c.html#af0bdc5b088ee77bb43e90ee7b3c2bce0">More...</a><br /></td></tr>
 <tr class="separator:af0bdc5b088ee77bb43e90ee7b3c2bce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d06826bb3fec221dc2b72c07de8dbb9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__stats_8c.html#a5d06826bb3fec221dc2b72c07de8dbb9">system_get_number_tasks_running</a> ()</td></tr>
+<tr class="separator:a5d06826bb3fec221dc2b72c07de8dbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b95da8d03e6b59e7b18ee7fe41f409e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="system__stats_8h.html#ae85980d795ce082616b314c52fdf5e96">system_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__stats_8c.html#a4b95da8d03e6b59e7b18ee7fe41f409e">system_get_system_state</a> ()</td></tr>
+<tr class="separator:a4b95da8d03e6b59e7b18ee7fe41f409e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a860a227aef02d72acf742a5c4f5c8e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__stats_8c.html#a860a227aef02d72acf742a5c4f5c8e8e">system_print_runtime_stats</a> (char *pcWriteBuffer)</td></tr>
 <tr class="memdesc:a860a227aef02d72acf742a5c4f5c8e8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to print the current CPU usage of tasks.  <a href="system__stats_8c.html#a860a227aef02d72acf742a5c4f5c8e8e">More...</a><br /></td></tr>
 <tr class="separator:a860a227aef02d72acf742a5c4f5c8e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +173,40 @@ Functions</h2></td></tr>
 <li>uint32_t Free heap size </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="a5d06826bb3fec221dc2b72c07de8dbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d06826bb3fec221dc2b72c07de8dbb9">&#9670;&nbsp;</a></span>system_get_number_tasks_running()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t system_get_number_tasks_running </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b95da8d03e6b59e7b18ee7fe41f409e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b95da8d03e6b59e7b18ee7fe41f409e">&#9670;&nbsp;</a></span>system_get_system_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="system__stats_8h.html#ae85980d795ce082616b314c52fdf5e96">system_status_t</a> system_get_system_state </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -246,7 +285,7 @@ When running in dual core mode, each core will correspond to 50% of the run time
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5f51381ce0c7cabc26f1cc0c6eff3683.html">system_stats</a></li><li class="navelem"><a class="el" href="system__stats_8c.html">system_stats.c</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_5f51381ce0c7cabc26f1cc0c6eff3683.html">system_stats</a></li><li class="navelem"><a class="el" href="dir_30c6b354679be296451f51e28a0cc187.html">src</a></li><li class="navelem"><a class="el" href="system__stats_8c.html">system_stats.c</a></li>
     <li class="footer">Generated by <a href="https://iotready.co"> IoTReady </a><img class="footer" src="logo.png" width="30" height="30" alt="IoTReady"/></a></li>
   </ul>
 </div>

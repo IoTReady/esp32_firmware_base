@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_wifi_config_over_bluetooth.html',''
 <p>Let's talk about a simple example. Your ESP32 devices are functioning in station mode and are connected to your company sub-network. Your company changes your subnet SSID and as a result credentials have to be updated across your set of nodes. If you hadn't foreseen this use-case, you have to go through a laborious task of bringing these devices down one-by-one and re-configuring them before they are deployed again. Wouldn't it be helpful if you had some kind of local access that didn't depend on the main infrastructure being up and running ?</p>
 <p>While we are talking in this simple example about WiFi credentials, this capability can also be useful when some features of the system need configuring once in a while. In these type of problems, even a simple pre-thought out plan can save a lot of time and effort. Since our devices support BLE, it makes obvious that a solution to this is to expose critical parameters behind BLE accessible points (called characteristics in BLE jargon).</p>
 <p>Hence we are adding an example to the ESP32 framework we released last week. This example implements a BLE server and exposes a service that allows users to configure the WiFi configuration for the device to become a station and connect to that network. Obviously, you can add other variables / commands to the example to handle your specific use cases.</p>
-<h1><a class="anchor" id="autotoc_md50"></a>
+<h1><a class="anchor" id="autotoc_md137"></a>
 Bluetooth Characteristic Table for the example</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -105,7 +105,7 @@ Bluetooth Characteristic Table for the example</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>0x00EE</code>   </td><td class="markdownTableBodyNone"><code>0xEE02</code>   </td><td class="markdownTableBodyNone">WiFi Connect   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md51"></a>
+<h2><a class="anchor" id="autotoc_md138"></a>
 Hardware Required</h2>
 <p>To run this example, you need:</p><ul>
 <li>An ESP32 dev board (e.g. ESP32-WROVER Kit, ESP32-Ethernet-Kit) or ESP32 core board (e.g. ESP32-DevKitC).</li>

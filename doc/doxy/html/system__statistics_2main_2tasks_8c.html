@@ -97,9 +97,10 @@ $(document).ready(function(){initNavTree('system__statistics_2main_2tasks_8c.htm
 <code>#include &quot;freertos/task.h&quot;</code><br />
 <code>#include &quot;freertos/queue.h&quot;</code><br />
 <code>#include &quot;esp_log.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &quot;common.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="system__statistics_2main_2tasks_8h_source.html">tasks.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="system__stats_8h_source.html">system_stats.h</a>&quot;</code><br />
+<code>#include &lt;cJSON.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -120,6 +121,8 @@ Functions</h2></td></tr>
 <tr class="separator:a63f7115038abb6738e97a3f458afc50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e70b3db1fa4e48299b4b3daae9097c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__statistics_2main_2tasks_8c.html#a52e70b3db1fa4e48299b4b3daae9097c">system_stats_task</a> (void *pvParameter)</td></tr>
 <tr class="separator:a52e70b3db1fa4e48299b4b3daae9097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8ad338bc9e6d52f432654e4be85334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__statistics_2main_2tasks_8c.html#adb8ad338bc9e6d52f432654e4be85334">system_stats_task_json</a> (void *pvParameter)</td></tr>
+<tr class="separator:adb8ad338bc9e6d52f432654e4be85334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1edfef22dbd0d56c3e3e7998281f5141"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__statistics_2main_2tasks_8c.html#a1edfef22dbd0d56c3e3e7998281f5141">free_heap_monitor_task</a> (void *pvParameter)</td></tr>
 <tr class="separator:a1edfef22dbd0d56c3e3e7998281f5141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bbe368ed0907f5f8b92e0092ba044bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="system__statistics_2main_2tasks_8c.html#a6bbe368ed0907f5f8b92e0092ba044bd">initialize_tasks</a> ()</td></tr>
@@ -225,6 +228,24 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void system_stats_task </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pvParameter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb8ad338bc9e6d52f432654e4be85334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb8ad338bc9e6d52f432654e4be85334">&#9670;&nbsp;</a></span>system_stats_task_json()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void system_stats_task_json </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>pvParameter</em></td><td>)</td>

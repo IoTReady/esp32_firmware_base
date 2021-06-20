@@ -97,8 +97,8 @@ $(document).ready(function(){initNavTree('gpio_2main_2tasks_8c.html',''); initRe
 <code>#include &quot;freertos/task.h&quot;</code><br />
 <code>#include &quot;freertos/queue.h&quot;</code><br />
 <code>#include &quot;esp_log.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gpio__interface_8h_source.html">gpio_interface.h</a>&quot;</code><br />
+<code>#include &quot;common.h&quot;</code><br />
+<code>#include &quot;gpio_interface.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="queues_8h_source.html">queues.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gpio_2main_2tasks_8h_source.html">tasks.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="system__stats_8h_source.html">system_stats.h</a>&quot;</code><br />
@@ -107,9 +107,9 @@ $(document).ready(function(){initNavTree('gpio_2main_2tasks_8c.html',''); initRe
 Macros</h2></td></tr>
 <tr class="memitem:afc3d101f633a076cc1ca84b85b6224b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_2main_2tasks_8c.html#afc3d101f633a076cc1ca84b85b6224b2">TAG</a>&#160;&#160;&#160;&quot;TASKS&quot;</td></tr>
 <tr class="separator:afc3d101f633a076cc1ca84b85b6224b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa67fd176f0770e3de2897fc25e0ad6f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_2main_2tasks_8c.html#aa67fd176f0770e3de2897fc25e0ad6f6">EXAMPLE_BUTTON_GPIO</a>&#160;&#160;&#160;<a class="el" href="gpio_2build_2config_2sdkconfig_8h.html#af2ddcd5eb4f019c5ffc15cadbdb6fd4d">CONFIG_BUTTON_GPIO</a></td></tr>
+<tr class="memitem:aa67fd176f0770e3de2897fc25e0ad6f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_2main_2tasks_8c.html#aa67fd176f0770e3de2897fc25e0ad6f6">EXAMPLE_BUTTON_GPIO</a>&#160;&#160;&#160;CONFIG_BUTTON_GPIO</td></tr>
 <tr class="separator:aa67fd176f0770e3de2897fc25e0ad6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d45758d9404f602b95760a9ec7041c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_2main_2tasks_8c.html#a4d45758d9404f602b95760a9ec7041c7">EXAMPLE_LED_GPIO</a>&#160;&#160;&#160;<a class="el" href="gpio_2build_2config_2sdkconfig_8h.html#a1d66a45b5267bf6b9a8b324ef3c6f83a">CONFIG_LED_GPIO</a></td></tr>
+<tr class="memitem:a4d45758d9404f602b95760a9ec7041c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gpio_2main_2tasks_8c.html#a4d45758d9404f602b95760a9ec7041c7">EXAMPLE_LED_GPIO</a>&#160;&#160;&#160;CONFIG_LED_GPIO</td></tr>
 <tr class="separator:a4d45758d9404f602b95760a9ec7041c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -142,7 +142,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXAMPLE_BUTTON_GPIO&#160;&#160;&#160;<a class="el" href="gpio_2build_2config_2sdkconfig_8h.html#af2ddcd5eb4f019c5ffc15cadbdb6fd4d">CONFIG_BUTTON_GPIO</a></td>
+          <td class="memname">#define EXAMPLE_BUTTON_GPIO&#160;&#160;&#160;CONFIG_BUTTON_GPIO</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -156,7 +156,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EXAMPLE_LED_GPIO&#160;&#160;&#160;<a class="el" href="gpio_2build_2config_2sdkconfig_8h.html#a1d66a45b5267bf6b9a8b324ef3c6f83a">CONFIG_LED_GPIO</a></td>
+          <td class="memname">#define EXAMPLE_LED_GPIO&#160;&#160;&#160;CONFIG_LED_GPIO</td>
         </tr>
       </table>
 </div><div class="memdoc">
