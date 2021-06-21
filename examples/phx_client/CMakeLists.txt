@@ -3,8 +3,8 @@
 cmake_minimum_required(VERSION 3.5)
 
 # (Not part of the boilerplate)
-# Include components from the 'components' directory for the project
-set(EXTRA_COMPONENT_DIRS ../components)
+# Include components from the 'lib' directory for the project
+set(EXTRA_COMPONENT_DIRS ../../lib/common ../../lib/phx_client ../../lib/wifi_station ../../lib/utilities)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(phx-client-esp32)
