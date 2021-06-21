@@ -30,6 +30,15 @@ For more insights, view API specific code documentation [here](./include/phx_cli
 - `phx_reply`: Some message types get a response from Phoenix server. This is the event of a reply received. 
 
 
+### Message Structure
+
+A valid Phoenix socket message contains the following keys:
+- `topic` - The string topic or "topic:subtopic" pair namespace, such as "messages" or "messages:123"
+- `event` - The string event name, for example "phx_join"
+- `payload` - The message payload
+- `ref` - The unique string ref
+
+
 #### Example message for connecting to a channel
 
 ````
@@ -65,20 +74,20 @@ For more insights, view API specific code documentation [here](./include/phx_cli
 
 > Note: This library has been tested to work with ESP-IDF [v4.2.1](https://github.com/espressif/esp-idf/releases/tag/v4.2.1)
 
-For any queries, please write 
-
 
 ## Feedback
 
 * [create issue on github](https://github.com/IoTReady/esp32_firmware_base/issues/new)
 
-* Click ★ <kbd>Star</kbd> on the top right corner of this page if this repo helps you
+* Click ★ <kbd>Star</kbd> on the top right corner of this page if this repo helps you.
 
+* For any queries, please write to us at hello@iotready.co
 
 
 ## Participate in the development
 
 Fork -> Modify -> Submit PR
+
 
 ## References'
 - [Phoenix Channels](https://hexdocs.pm/phoenix/channels.html)
