@@ -32,10 +32,11 @@ esp_websocket_client_handle_t phx_connect(phx_transport_t transport, const char 
  * @param[in]  topic      Topic to join
  * @param[in]  token      Token for authentication 
  *
- * @return  void
+ * @return  ESP_OK: success
+ * 			ESP_FAIL: fail
  * 
  */
-void phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token);
+esp_err_t phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token);
 
 /**
  * @brief   This function will publish to a channel
@@ -44,9 +45,10 @@ void phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token)
  * @param[in]  topic      Topic to publish to
  * @param[in]  pub_json   cJSON object containing data to publish 
  *
- * @return  void 
+ * @return  ESP_OK: success
+ * 			ESP_FAIL: fail 
  * 
  */
-void phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pub_json);
+esp_err_t phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pub_json);
 
 #endif // __PHX_CLIENT__

@@ -52,7 +52,7 @@ esp_websocket_client_handle_t phx_connect(phx_transport_t transport, const char 
     }
 }
 
-void phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token)
+esp_err_t phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token)
 {
     cJSON *root = cJSON_CreateObject();
     cJSON *payload = cJSON_CreateObject();
@@ -64,13 +64,19 @@ void phx_join(esp_websocket_client_handle_t ws_client, char *topic, char *token)
 
     ESP_LOGI(TAG, "Outgoing topic: %s, data:\n%s", topic, data);
 
-    esp_websocket_client_send_text(ws_client, data, strlen(data), portMAX_DELAY);
-
+    int ret = esp_websocket_client_send_text(ws_client, data, strlen(data), portMAX_DELAY);
     cJSON_Delete(root);
     cJSON_free(data);
+
+    if (ret == ESP_FAIL)
+    {
+        ESP_LOGE(TAG, "Error sending websocket message!");
+        return ret;
+    }
+    return ESP_OK;
 }
 
-void phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pub_json)
+esp_err_t phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pub_json)
 {
     cJSON *root = cJSON_CreateObject();
     cJSON_AddStringToObject(root, "event", "new_msg");
@@ -81,8 +87,14 @@ void phx_publish(esp_websocket_client_handle_t ws_client, char *topic, cJSON *pu
 
     ESP_LOGI(TAG, "Outgoing topic: %s, data:\n%s", topic, data);
 
-    esp_websocket_client_send_text(ws_client, data, strlen(data), portMAX_DELAY);
-
+    int ret = esp_websocket_client_send_text(ws_client, data, strlen(data), portMAX_DELAY);
     cJSON_Delete(pub_json);
     cJSON_free(data);
+
+    if (ret == ESP_FAIL)
+    {
+        ESP_LOGE(TAG, "Error sending websocket message!");
+        return ret;
+    }
+    return ESP_OK;
 }

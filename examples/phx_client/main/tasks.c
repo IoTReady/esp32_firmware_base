@@ -1,5 +1,6 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "esp_log.h"
 #include "cJSON.h"
 
 #include "common.h"
@@ -15,7 +16,13 @@ void phx_client_task()
     sprintf(topic, "device:%s", get_device_id());
 
     esp_websocket_client_handle_t client = phx_connect(WEBSOCKETS, WEBSOCKET_URI);
-    phx_join(client, topic, NULL);
+    if (client == NULL)
+    {
+        ESP_LOGE("Failed to connect to %s", WEBSOCKET_URI);
+        vTaskDelete(NULL);
+    }
+
+    ESP_ERROR_CHECK(phx_join(client, topic, NULL));
 
     int count = 0;
     while(1)
@@ -25,7 +32,7 @@ void phx_client_task()
         cJSON *root = cJSON_CreateObject();
         cJSON_AddNumberToObject(root, "count", count);
 
-        phx_publish(client, topic, root);
+        ESP_ERROR_CHECK(phx_publish(client, topic, root));
         vTaskDelay(5000 / portTICK_RATE_MS);
     }
 }
