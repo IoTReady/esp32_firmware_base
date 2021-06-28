@@ -139,7 +139,7 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
-    
+
     // Station configuration settings
     wifi_config_t wifi_config = {
         .sta = {
@@ -232,6 +232,11 @@ esp_err_t wifi_deinit_station()
         return error_print_and_return(TAG, err);
     }
 
+    err = esp_event_handler_unregister(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, &on_wifi_disconnect);
+    if (err  != ESP_OK){
+        return error_print_and_return(TAG, err);
+    }
+    
     // Stop WiFi
     err = esp_wifi_stop();
     if (err  != ESP_OK){
