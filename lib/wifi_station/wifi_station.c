@@ -18,7 +18,7 @@
 #define CONFIG_ESP_MAXIMUM_RETRY    5
 
 /* FreeRTOS event group to signal when we are connected*/
-EventGroupHandle_t s_wifi_event_group;
+static EventGroupHandle_t s_wifi_event_group;
 
 /* The event group allows multiple bits for each event, but we only care about two events:
  * - we are connected to the AP with an IP
@@ -32,6 +32,7 @@ wifi_sta_init_struct_t wifi_params_sta = {
 };
 
 static int s_retry_num = 0;
+static void wifi_sta_set_connected(bool c);
 
 esp_netif_t *ap_netif;
 esp_netif_ip_info_t ip;
@@ -42,6 +43,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
         esp_wifi_connect();
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
+        wifi_sta_set_connected(false);
         if (s_retry_num < CONFIG_ESP_MAXIMUM_RETRY) {
             esp_wifi_connect();
             s_retry_num++;
@@ -51,6 +53,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
         }
         ESP_LOGI(TAG,"connect to the AP fail");
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
+        wifi_sta_set_connected(true);
         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
@@ -61,6 +64,34 @@ static void event_handler(void* arg, esp_event_base_t event_base,
 EventGroupHandle_t wifi_sta_get_event_group()
 {
     return s_wifi_event_group;
+}
+
+int wifi_sta_is_connected()
+{
+    vTaskDelay(10/portTICK_PERIOD_MS);  //delay to prevent assert failure
+    return (xEventGroupGetBits(s_wifi_event_group) & WIFI_CONNECTED_BIT) ? 1 : 0;
+}
+
+static void wifi_sta_set_connected(bool c)
+{
+    if (wifi_sta_is_connected() == c) {
+        return;
+    }
+    
+    if (c) {
+        xEventGroupSetBits(s_wifi_event_group, WIFI_STA_EVENT_GROUP_CONNECTED_FLAG);
+    } else {
+        xEventGroupClearBits(s_wifi_event_group, WIFI_STA_EVENT_GROUP_CONNECTED_FLAG);
+    }
+    
+    ESP_LOGI(TAG, "Device is now %s WIFI network", c ? "connected to" : "disconnected from");
+}
+
+static void on_wifi_disconnect(void *arg, esp_event_base_t event_base,
+                               int32_t event_id, void *event_data)
+{
+    ESP_LOGI(TAG, "Wi-Fi disconnected, trying to reconnect...");
+    esp_wifi_connect();
 }
 
 esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
@@ -103,6 +134,8 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (err  != ESP_OK){
         return error_print_and_return(TAG, err);
     }
+
+    ESP_ERROR_CHECK(esp_event_handler_register(WIFI_EVENT, WIFI_EVENT_STA_DISCONNECTED, &on_wifi_disconnect, NULL));
 
     // Station configuration settings
     wifi_config_t wifi_config = {
@@ -156,28 +189,29 @@ esp_err_t wifi_init_station(const char *wifi_ssid, const char *wifi_password)
     if (bits & WIFI_CONNECTED_BIT) {
         ESP_LOGI(TAG, "Connected to AP SSID:%s password:%s",
                  wifi_ssid, wifi_password);
-        esp_netif_get_ip_info(ap_netif, &ip);
-        ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
-        return err;
     } else if (bits & WIFI_FAIL_BIT) {
         ESP_LOGE(TAG, "Failed to connect to SSID:%s, password:%s",
                  wifi_ssid, wifi_password);
-        err = esp_event_handler_unregister(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler);
-        if (err  != ESP_OK){
-            return error_print_and_return(TAG, err);
-        }
-
-        err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler);
-        if (err  != ESP_OK){
-            return error_print_and_return(TAG, err);
-        }
-
-        vEventGroupDelete(s_wifi_event_group);
-        return -1;
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
-        return -1;
     }
+
+    err = esp_event_handler_unregister(IP_EVENT, IP_EVENT_STA_GOT_IP, &event_handler);
+    if (err  != ESP_OK){
+        return error_print_and_return(TAG, err);
+    }
+
+    err = esp_event_handler_unregister(WIFI_EVENT, ESP_EVENT_ANY_ID, &event_handler);
+    if (err  != ESP_OK){
+        return error_print_and_return(TAG, err);
+    }
+
+    vEventGroupDelete(s_wifi_event_group);
+
+    esp_netif_get_ip_info(ap_netif, &ip);
+    ESP_LOGI(TAG, "- IPv4 address: " IPSTR, IP2STR(&ip.ip));
+    
+    return err;
 }
 
 esp_err_t wifi_deinit_station()

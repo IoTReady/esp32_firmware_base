@@ -33,10 +33,9 @@ void station_task(void *pvParameter) {
 
     // Initialize softAP
     wifi_init_station(EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS);
-    vTaskDelay(30000 / portTICK_PERIOD_MS);
 
     // De-Initialize softAP
-    wifi_deinit_station();
+    // wifi_deinit_station();
 
     // Delete task since it is a one-time operation
     vTaskDelete(NULL);

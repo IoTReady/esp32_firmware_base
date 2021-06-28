@@ -15,7 +15,7 @@
 
 #define TAG "WIFI_STATION_INTERFACE"
 
-#define CONFIG_ESP_MAXIMUM_RETRY    5
+#define CONFIG_ESP_MAXIMUM_RETRY    50
 
 /* FreeRTOS event group to signal when we are connected*/
 EventGroupHandle_t s_wifi_event_group;
