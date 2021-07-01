@@ -117,7 +117,7 @@ void softap_task(void *pvParameter) {
 
     char *device_id = get_device_id();
     char *softap_ssid[17];
-    sprintf(softap_ssid, "IoT-%s", device_id);
+    sprintf(softap_ssid, "IoTReady %s", device_id);
 
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
