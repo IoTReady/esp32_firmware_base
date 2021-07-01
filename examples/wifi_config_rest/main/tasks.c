@@ -24,26 +24,14 @@
 #define CONFIG_ESP_WIFI_CHANNEL     1
 #define CONFIG_ESP_MAX_STA_CONN     4
 
-#define REPORT_DELAY 20000
-#define STATS_TICKS pdMS_TO_TICKS(1000)
+#define WIFI_CONFIG_URI     "/api/wifi/credential"
+
+#define REPORT_DELAY    20000
+#define STATS_TICKS     pdMS_TO_TICKS(1000)
+#define MAX_BUFSIZE     10240
 
 TaskHandle_t *softap_task_handle = NULL;
 
-/* Simple handler for getting system handler */
-static esp_err_t system_info_get_handler(httpd_req_t *req)
-{
-    httpd_resp_set_type(req, "application/json");
-    cJSON *root = cJSON_CreateObject();
-    esp_chip_info_t chip_info;
-    esp_chip_info(&chip_info);
-    cJSON_AddStringToObject(root, "version", IDF_VER);
-    cJSON_AddNumberToObject(root, "cores", chip_info.cores);
-    const char *sys_info = cJSON_Print(root);
-    httpd_resp_sendstr(req, sys_info);
-    free((void *)sys_info);
-    cJSON_Delete(root);
-    return ESP_OK;
-}
 
 /* An HTTP POST handler */
 static esp_err_t wifi_credential_post_handler(httpd_req_t *req)
@@ -51,18 +39,22 @@ static esp_err_t wifi_credential_post_handler(httpd_req_t *req)
     char buf[100];
     // char *buf = (char*) malloc(100 * sizeof(char));
     int ret, total_len = req->content_len, remaining = req->content_len;
-
+    if (total_len >= MAX_BUFSIZE) {
+        /* Respond with 500 Internal Server Error */
+        httpd_resp_send_err(req, HTTPD_500_INTERNAL_SERVER_ERROR, "Content too long");
+        return ESP_FAIL;
+    }
     while (remaining > 0) {
         /* Read the data for the request */
-        if ((ret = httpd_req_recv(req, buf,
-                        MIN(remaining, sizeof(buf)))) <= 0) {
-            if (ret == HTTPD_SOCK_ERR_TIMEOUT) {
+        if ((ret = httpd_req_recv(req, buf, MIN(remaining, sizeof(buf)))) <= 0)
+        {
+            if (ret == HTTPD_SOCK_ERR_TIMEOUT)
+            {
                 /* Retry receiving if timeout occurred */
                 continue;
             }
             return ESP_FAIL;
         }
-
         remaining -= ret;
 
         /* Log data received */
@@ -78,11 +70,13 @@ static esp_err_t wifi_credential_post_handler(httpd_req_t *req)
 
     ESP_LOGI(TAG, "WiFi credentials received: SSID = %s, password = %s", ssid, password);
 
-    // End response
+    // Send response 200 OK by default
     httpd_resp_sendstr(req, "Post WiFi credentials successfully");
 
     // Delay necessary for proper despatch of response
     vTaskDelay(100 / portTICK_PERIOD_MS);
+
+    httpd_unregister_uri(req->handle, WIFI_CONFIG_URI);
 
     wifi_deinit_softap();
     wifi_init_station(ssid, password);
@@ -106,18 +100,10 @@ static esp_err_t start_rest_server()
     }
 
     ESP_LOGI(TAG, "Registering URI handlers");
-    /* URI handler for fetching system info */
-    httpd_uri_t system_info_get_uri = {
-        .uri = "/api/system/info",
-        .method = HTTP_GET,
-        .handler = system_info_get_handler,
-        .user_ctx = NULL
-    };
-    err = httpd_register_uri_handler(server, &system_info_get_uri);
 
-        /* URI handler for light brightness control */
+    /* URI handler for wifi configuration */
     httpd_uri_t wifi_credential_post_uri = {
-        .uri = "/api/wifi/credential",
+        .uri = WIFI_CONFIG_URI,
         .method = HTTP_POST,
         .handler = wifi_credential_post_handler,
         .user_ctx = NULL
