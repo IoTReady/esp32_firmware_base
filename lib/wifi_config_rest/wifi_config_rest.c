@@ -121,7 +121,7 @@ static esp_err_t wifi_config_write_flag_nvs()
     return ret;
 }
 
-bool wifi_config_read_flag_nvs()
+static bool wifi_config_read_flag_nvs()
 {
     
     static nvs_handle nvsHandle;
@@ -259,7 +259,7 @@ static esp_err_t start_rest_server()
 
 bool wifi_config_is_provisioned()
 {
-    return wifi_config_flag;
+    return wifi_config_read_flag_nvs();
 }
 
 esp_err_t wifi_config_start() 

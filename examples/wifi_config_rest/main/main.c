@@ -21,7 +21,7 @@ void app_main(void)
       ret = nvs_flash_init();
     }
     
-    wifi_config_flag = wifi_config_read_flag_nvs();
+    wifi_config_flag = wifi_config_is_provisioned();
     if ( !wifi_config_flag )
     {
         ESP_LOGI(TAG, "WiFi not configured yet. Starting config process.");
